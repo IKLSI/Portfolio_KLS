@@ -1,144 +1,145 @@
 @media (max-width:600px) {
-    body {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-family: 'Orbitron',sans-serif;
-        color: white;
-        background-color: black;
-    }
+	body {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-family: 'Orbitron',sans-serif;
+		color: white;
+		background-color: black;
+	}
 
-    .profil {
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-    }
+	.profil {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+	}
 
-    .lettre {
-        letter-spacing: 8px;
-    }
+	.lettre {
+		letter-spacing: 8px;
+	}
 
-    .volet_Accueil {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+	.volet_Accueil {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .social {
-        margin-top: 10px;
-    }
+	.social {
+		margin-top: 10px;
+	}
 
-    .social img {
-        width: 70px;
-        height: 70px;
-        margin: 5px;
-    }
+	.social img {
+		width: 70px;
+		height: 70px;
+		margin: 5px;
+	}
 
-    .section {
-        height: auto;
-        margin-top: 5%;
-        padding: 20px;
-    }
+	.section {
+		height: auto;
+		margin-top: 5%;
+		padding: 20px;
+	}
 
-    .langage img {
-        width: 80px;
-        height: 80px;
-        margin-left: 4%;
-        border-radius: 50%;
-        overflow: hidden;
-    }
+	.langage img {
+		width: 80px;
+		height: 80px;
+		margin-left: 4%;
+		border-radius: 50%;
+		overflow: hidden;
+	}
 
-    .framework img {
-        width: 160px;
-        margin-top: 15%;
-        margin-left: 4%;
-    }
+	.framework img {
+		width: 160px;
+		margin-top: 15%;
+		margin-left: 4%;
+	}
 
-    .bdd img {
-        width: 160px;
-        margin-top: 15%;
-        margin-left: 4%;
-    }
+	.bdd img {
+		width: 160px;
+		margin-top: 15%;
+		margin-left: 4%;
+	}
 
-    #reseau img {
-        width: 160px;
-        height: 140px;
-        padding: 5px;
-        border-radius: 20%;
-        overflow: hidden;
-    }
+	#reseau img {
+		width: 160px;
+		height: 140px;
+		padding: 5px;
+		border-radius: 20%;
+		overflow: hidden;
+	}
 
-    .setup-container p,
-    .reseau-container p {
-        margin-left: 4%;
-    }
+	.setup-container p,
+	.reseau-container p {
+		margin-left: 4%;
+	}
 
-    h1 {
-        font-size: 24px;
-    }
+	h1 {
+		font-size: 24px;
+	}
 
-    .langage-container,
-    .framework-container,
-    .bdd-container,
-    .reseau-container,
-    .project-container,
-    .competences-container,
-    .parcours-container,
-    .setup-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-gap: 10px;
-    }
+	.langage-container,
+	.framework-container,
+	.bdd-container,
+	.reseau-container,
+	.project-container,
+	.competences-container,
+	.parcours-container,
+	.setup-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+		grid-gap: 10px;
+	}
 
-    .project-card,
-    .project-card2,
-    .competences,
-    .parcours,
-    .setup-item {
-        margin: 10px;
-        padding: 20px;
-    }
+	.project-card,
+	.project-card2,
+	.competences,
+	.parcours,
+	.setup-item {
+		margin: 10px;
+		padding: 20px;
+	}
 
-    .circle {
-        display: none;
-    }
+	.content {
+		font-size: 14px;
+	}
 
-    .content {
-        font-size: 14px;
-    }
+	#setup img {
+		width: 275px;
+		height: 200px;
+		padding: 20px;
+		border-radius: 20%;
+		overflow: hidden;
+	}
 
-    #setup img {
-        width: 275px;
-        height: 200px;
-        padding: 20px;
-        border-radius: 20%;
-        overflow: hidden;
-    }
+	.project-card {
+		width: 40%;
+		height: 70%;
+		margin-left: 4%;
+		text-align: center;
+		font-size: 10px;
+		background-color: #333;
+	}
 
-    .project-card {
-        width: 40%;
-        height: 70%;
-        margin-left: 4%;
-        text-align: center;
-        font-size: 10px;
-        background-color: #333;
-    }
+	.project-card2 {
+		width: 40%;
+		height: 70%;
+		margin-left: 45%;
+		text-align: center;
+		font-size: 10px;
+		background-color: #333;
+	}
 
-    .project-card2 {
-        width: 40%;
-        height: 70%;
-        margin-left: 45%;
-        text-align: center;
-        font-size: 10px;
-        background-color: #333;
-    }
+	.etudes3, .etudes4 {
+		margin-left: 5%;
+	}
 
-    @keyframes scrollingAnimation {
-    from {
-        transform: translateX(-100%);
-    }
+	@keyframes scrollingAnimation {
+		from {
+			transform: translateX(-100%);
+		}
 
-    to {
-        transform: translateX(-100%);
-    }
+		to {
+			transform: translateX(-100%);
+		}
+	}
 }
