@@ -3,12 +3,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Orbitron',sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	color: white;
 	background-color: black;
 }
-
-/* Styles pour la navigation verticale */
 
 .section {
 	display: flex;
@@ -16,6 +14,8 @@ body {
 	height: 100vh;
 	margin-top: 10%;
 }
+
+/* Section accueil */
 
 .profil {
 	width: 500px;
@@ -26,6 +26,17 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+#defilement {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: black;
 }
 
 .volet_Accueil {
@@ -45,6 +56,8 @@ a {
 	text-align: center;
 }
 
+/* Ensemble des sections */
+
 #langages h1,
 #framework h1,
 #bdd h1,
@@ -58,6 +71,8 @@ a {
 	font-style: italic;
 }
 
+/* Section langages */
+
 .langage img {
 	width: 120px;
 	height: 120px;
@@ -66,33 +81,57 @@ a {
 	overflow: hidden;
 }
 
-#defilement {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 50px;
-	overflow: hidden;
-	white-space: nowrap;
-	background-color: black;
-}
+/* Section framework et bdd */
 
 .framework-container,
 .bdd-container {
 	justify-content: center;
 }
 
-.framework img {
+.framework img,
+.bdd img {
 	width: 200px;
-	margin-top: 5%;
+	margin-top: 4%;
 	margin-left: 45%;
 }
 
-.bdd img {
-	width: 200px;
-	margin-top: 2%;
+/* Section reseau */
+
+.setup-container p,
+.reseau-container p {
+	margin-left: 35%;
+}
+
+.reseau-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+#reseau img {
+	width: 320px;
+	height: 180px;
+	padding: 60px;
+	border-radius: 20%;
+	overflow: hidden;
+	margin-left: 15%;
+}
+
+#reseau .Img_Git {
+	width: 170px;
+	height: 170px;
+	margin-left: 25%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.technology p {
 	margin-left: 45%;
 }
+
+/* Section projets */
 
 .project-container {
 	display: grid;
@@ -140,11 +179,42 @@ a {
 	background-color: #666;
 }
 
+/* Section competences */
+
+/* Section competences */
+.competences {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .circle {
+	fill: black;
+	stroke: orange;
+	stroke-width: 3px;
+  }
+  
+  .content {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	fill: white;
+	text-anchor: middle;
+	dominant-baseline: middle;
+  }
+  
+
+/* Section parcours */
+
 #parcours {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.parcours {
+	margin-top: 8%;
 }
 
 .parcours-container {
@@ -154,12 +224,36 @@ a {
 	justify-content: center;
 }
 
-.parcours {
-	display: flex;
+.parcours,
+.parcours-arrow {
+	display: inline-block;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 20px;
 }
+
+.arrow {
+	font-size: 40px;
+	margin: 0 20px;
+	color: purple;
+}
+
+.etudes {
+	margin-left: 6%;
+}
+
+.etudes2 {
+	margin-left: 10%;
+}
+
+.etudes3 {
+	margin-left: 15%;
+}
+
+.etudes4 {
+	margin-left: 18%;
+}
+
+/* Section setup */
 
 #setup {
 	display: flex;
@@ -180,35 +274,11 @@ a {
 	width: 550px;
 	height: 400px;
 	padding: 60px;
-	border-radius: 20%;
+	border-radius: 10%;
 	overflow: hidden;
 }
 
-.setup-container p,
-.reseau-container p {
-	margin-left: 35%;
-}
-
-.competences {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.circle {
-	fill: black;
-	stroke: orange;
-	stroke-width: 3px;
-}
-
-.content {
-	font-family: Arial,sans-serif;
-	font-size: 14px;
-	fill: white;
-	text-anchor: end;
-	dominant-baseline: hanging;
-}
+/* Section footer */
 
 footer {
 	margin-top: 0;
@@ -216,20 +286,4 @@ footer {
 	font-size: 20px;
 	font-style: italic;
 	font-weight: bold;
-}
-
-.reseau-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 10px;
-	align-items: center;
-	justify-content: center;
-}
-
-#reseau img {
-	width: 400px;
-	height: 200px;
-	padding: 60px;
-	border-radius: 20%;
-	overflow: hidden;
 }
