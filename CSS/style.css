@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Orbitron',sans-serif;
 	color: white;
 	background-color: black;
 }
@@ -12,7 +12,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	margin-top: 10%;
+	margin-top: 8%;
 }
 
 /* Section accueil */
@@ -65,7 +65,8 @@ a {
 #parcours h1,
 #setup h1,
 #competences h1,
-#reseau h1 {
+#reseau h1,
+#commentaire h1 {
 	margin-top: 0;
 	text-align: center;
 	font-style: italic;
@@ -82,11 +83,6 @@ a {
 }
 
 /* Section framework et bdd */
-
-.framework-container,
-.bdd-container {
-	justify-content: center;
-}
 
 .framework img,
 .bdd img {
@@ -113,10 +109,10 @@ a {
 #reseau img {
 	width: 320px;
 	height: 180px;
+	margin-left: 15%;
 	padding: 60px;
 	border-radius: 20%;
 	overflow: hidden;
-	margin-left: 15%;
 }
 
 #reseau .Img_Git {
@@ -128,7 +124,7 @@ a {
 }
 
 .technology p {
-	margin-left: 45%;
+	margin-left: 46%;
 }
 
 /* Section projets */
@@ -181,47 +177,31 @@ a {
 
 /* Section competences */
 
-/* Section competences */
-.competences {
+.competences, #parcours, .parcours-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-  }
-  
-  .circle {
+}
+
+.circle {
 	fill: black;
 	stroke: orange;
 	stroke-width: 3px;
-  }
-  
-  .content {
-	font-family: Arial, sans-serif;
-	font-size: 14px;
+}
+
+.content {
+	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+	font-size: 10px;
 	fill: white;
 	text-anchor: middle;
 	dominant-baseline: middle;
-  }
-  
+}
 
 /* Section parcours */
 
-#parcours {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
 .parcours {
 	margin-top: 8%;
-}
-
-.parcours-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 .parcours,
@@ -232,8 +212,8 @@ a {
 }
 
 .arrow {
-	font-size: 40px;
 	margin: 0 20px;
+	font-size: 40px;
 	color: purple;
 }
 
@@ -255,7 +235,7 @@ a {
 
 /* Section setup */
 
-#setup {
+#setup, #commentaire {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -274,8 +254,32 @@ a {
 	width: 550px;
 	height: 400px;
 	padding: 60px;
-	border-radius: 10%;
 	overflow: hidden;
+}
+
+/* Personnalisation champs de saisie et bouton du formulaire */
+
+input {
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+	margin-top: 5%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#submitButton {
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+	margin-top: 5%;
+	border: 1px solid yellow;
+	border-radius: 10px;
+	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+	font-style: italic;
+	font-weight: bold;
 }
 
 /* Section footer */
