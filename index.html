@@ -1,3 +1,5 @@
+<!-- Déclaration de la page index portfolio professionel -->
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -8,11 +10,24 @@
 		<link rel="stylesheet" href="./CSS/style.css"/>
 		<link rel="stylesheet" href="./CSS/effet.css"/>
 		<link rel="stylesheet" href="./CSS/responsive.css"/>
+		<link rel="stylesheet" href="./CSS/formulaire.css"/>
 	</head>
 	<body>
+
+		<!-- Déclaration de la section principale de full page -->
+
 		<div id="fullpage">
+
+			<!-- Message de bienvenue défilant  -->
+
 			<div id="defilement"></div>
+
+			<!-- Script js permettant ce message -->
+
 			<script src="./JS/animation.js"></script>
+
+			<!-- Section accueil -->
+
 			<div class="section" id="accueil">
 				<div class="volet_Accueil">
 					<div class="text">
@@ -39,6 +54,9 @@
 						<img src="./IMAGES/Profil.jpg" alt="Ma photo de profil"/>
 					</div>
 				</div>
+
+				<!-- Section social -->
+
 				<div class="social">
 					<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK">
 						<img src="https://www.huiledivine.com/wp-content/uploads/2014/12/linkedin.png" alt="LinkedIn"/>
@@ -48,6 +66,9 @@
 					</a>
 				</div>
 			</div>
+
+			<!-- Section langages -->
+
 			<div class="section" id="langages">
 				<h1>Mes langages de programmation</h1>
 				<div class="langage-container">
@@ -56,7 +77,7 @@
 						<img src="https://static.vecteezy.com/system/resources/previews/022/424/576/original/java-logo-editorial-free-vector.jpg" alt="Java"/>
 					</div>
 					<div class="langage">
-						<img src="https://logospng.org/download/css-3/logo-css-3-1536.png" alt="Logo CSS"/>
+						<img src="https://logospng.org/download/css-3/logo-css-3-1536.png" alt="CSS"/>
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" alt="C"/>
 					</div>
 					<div class="langage">
@@ -69,6 +90,9 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section framework -->
+
 			<div class="section" id="framework">
 				<h1>Utilisation de Framework</h1>
 				<div class="framework-container">
@@ -80,6 +104,9 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section base de données -->
+
 			<div class="section" id="bdd">
 				<h1>Utilisation de base de données</h1>
 				<div class="bdd-container">
@@ -94,6 +121,9 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section reseau -->
+
 			<div class="section" id="reseau">
 				<h1>Technologies serveur</h1>
 				<div class="reseau-container">
@@ -111,6 +141,9 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section projets -->
+
 			<div class="section" id="projets">
 				<h1>Exemple de mes projets</h1>
 				<div class="project-container">
@@ -136,30 +169,36 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section compétences -->
+
 			<div class="section" id="competences">
 				<h1>Mes compétences</h1>
 				<div class="competences-container">
 					<div class="competences">
+
+						<!-- SVG permettant de faire un cercle avec du texte autour -->
+
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
-							<circle class="circle" cx="19%" cy="50%" r="9%" />
+							<circle class="circle" cx="19%" cy="50%" r="8%" />
 							<text class="content">
-								<textPath xlink:href="#circle1" startOffset="30%" dy="-30">Développement</textPath>
+								<textPath xlink:href="#circle1" startOffset="30%">Développement</textPath>
 							</text>
-							<circle class="circle" cx="34%" cy="50%" r="9%" />
+							<circle class="circle" cx="34%" cy="50%" r="8%" />
 							<text class="content">
-								<textPath xlink:href="#circle2" startOffset="30%" dy="-30">Réseau</textPath>
+								<textPath xlink:href="#circle2" startOffset="30%">Réseau</textPath>
 							</text>
-							<circle class="circle" cx="49%" cy="50%" r="9%" />
+							<circle class="circle" cx="49%" cy="50%" r="8%" />
 							<text class="content">
-								<textPath xlink:href="#circle3" startOffset="40%" dy="-30">Résolution de problèmes</textPath>
+								<textPath xlink:href="#circle3" startOffset="40%">Résolution de problèmes</textPath>
 							</text>
-							<circle class="circle" cx="64%" cy="50%" r="9%" />
+							<circle class="circle" cx="64%" cy="50%" r="8%" />
 							<text class="content">
-								<textPath xlink:href="#circle4" startOffset="30%" dy="-30">Gestion de projets</textPath>
+								<textPath xlink:href="#circle4" startOffset="30%">Gestion de projets</textPath>
 							</text>
-							<circle class="circle" cx="79%" cy="50%" r="9%" />
+							<circle class="circle" cx="79%" cy="50%" r="8%" />
 							<text class="content">
-								<textPath xlink:href="#circle5" startOffset="30%" dy="-30">Travail d'équipe</textPath>
+								<textPath xlink:href="#circle5" startOffset="30%">Travail d'équipe</textPath>
 							</text>
 							<path id="circle1" d="M190,40 A60,60 0 0,1 190,160" style="fill:none" />
 							<path id="circle2" d="M340,40 A60,60 0 0,1 340,160" style="fill:none" />
@@ -170,45 +209,51 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section parcours -->
+
 			<div class="section" id="parcours">
 				<h1>Mon parcours d'études</h1>
 				<div class="parcours-container">
 					<div class="parcours">
 						<span class="annee">2023</span>
 						<span class="arrow">&#8594;</span>
-						<span class="annee">2024</span><br />
+						<span class="annee">2024</span><br>
 						<span class="etudes">BUT 2 Informatique</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">2022</span>
 						<span class="arrow">&#8594;</span>
-						<span class="annee">2023</span><br />
+						<span class="annee">2023</span><br>
 						<span class="etudes2">BUT 1 Informatique</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">2021</span>
 						<span class="arrow">&#8594;</span>
-						<span class="annee">2022</span><br />
+						<span class="annee">2022</span><br>
 						<span class="etudes3">Licence MIPSI</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">Août</span>
 						<span class="arrow">&#8594;</span>
-						<span class="annee">2021</span><br />
+						<span class="annee">2021</span><br>
 						<span class="etudes3">Permis B AAC</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">2018</span>
 						<span class="arrow">&#8594;</span>
-						<span class="annee">2021</span><br />
+						<span class="annee">2021</span><br>
 						<span class="etudes4">
-							Bac général<br />
-							&nbsp;&nbsp;Mathématiques, PC<br />
+							Bac général<br>
+							&nbsp;&nbsp;Mathématiques, PC<br>
 							&nbsp;&nbsp;Maths expertes / SI
 						</span>
 					</div>
 				</div>
 			</div>
+
+			<!-- Section setup -->
+
 			<div class="section" id="setup">
 				<h1>Mon setup</h1>
 				<div class="setup-container">
@@ -222,18 +267,87 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section contact -->
+
+			<div class="section" id="commentaire">
+				<h1>Formulaire de contact</h1>
+				<div class="background">
+					<div class="container">
+						<div class="screen">
+							<div class="screen-header">
+								<div class="screen-header-left">
+									<div class="screen-header-button close"></div>
+									<div class="screen-header-button maximize"></div>
+									<div class="screen-header-button minimize"></div>
+								</div>
+								<div class="screen-header-right">
+									<div class="screen-header-ellipsis"></div>
+									<div class="screen-header-ellipsis"></div>
+									<div class="screen-header-ellipsis"></div>
+								</div>
+							</div>
+							<div class="screen-body">
+								<div class="screen-body-item left">
+									<div class="app-title">
+										<span>CONTACTEZ</span>
+										<span>MOI</span>
+									</div>
+									<div class="app-contact"><a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/">CONTACT INFO</a></div>
+								</div>
+								<div class="screen-body-item">
+									<div class="app-form">
+										<div class="app-form-group">
+											<input class="app-form-control" id="email" placeholder="EMAIL" required/>
+										</div>
+										<div class="app-form-group message">
+											<input class="app-form-control" id="message" placeholder="MESSAGE" required/>
+										</div>
+										<div class="app-form-group buttons">
+											<button class="app-form-button" onclick="resetForm()">RÉINITIALISER</button>
+											<button class="app-form-button" id="submitButton">ENVOYER</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- Pied de page -->
+
 			<footer class="section">
-				Kyliann LEVESQUE<br /><br />
-				A la recherche d'une alternance ou d'un stage pour 2024 dans le domaine du développement informatique, réseau ou sécurité.<br /><br />
+				Kyliann LEVESQUE<br><br>
+				A la recherche d'une alternance ou d'un stage pour 2024 dans le domaine du développement informatique, réseau ou sécurité.<br><br>
 				<script src="./JS/date.js"></script>
 			</footer>
 		</div>
+
+		<!-- Script liaison firebase -->
+
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+		<script type="module">
+			const _0x30e9e8=_0x418a;(function(_0x31aefc,_0x89b80){const _0x3fabfa=_0x418a,_0x32bf2f=_0x31aefc();while(!![]){try{const _0x388216=parseInt(_0x3fabfa(0x9d))/(0x6fd*0x2+0x1074+0x1e6d*-0x1)*(parseInt(_0x3fabfa(0x9a))/(-0x256d+0x5*0x6e2+0x305))+parseInt(_0x3fabfa(0xbb))/(0x1*-0x11d9+-0x3ee+0xae5*0x2)*(parseInt(_0x3fabfa(0x9e))/(-0x436+-0xeef+-0x5*-0x3d5))+parseInt(_0x3fabfa(0xae))/(0x143f*0x1+0x1ba4+-0x2fde*0x1)*(parseInt(_0x3fabfa(0xb6))/(-0x1*0x172d+0xc79+-0x55d*-0x2))+parseInt(_0x3fabfa(0xa8))/(0x15*-0x61+0x873*0x3+-0x115d)*(parseInt(_0x3fabfa(0xc7))/(0x3eb+0x598+0x329*-0x3))+parseInt(_0x3fabfa(0x9f))/(0x1b98+0x25fa+-0x1*0x4189)*(-parseInt(_0x3fabfa(0xbd))/(0x373*0x2+0xd1*0x2f+0x1*-0x2d3b))+parseInt(_0x3fabfa(0xa7))/(-0x36f+-0x1*0x6fb+-0xa75*-0x1)+parseInt(_0x3fabfa(0xaf))/(0x5dd+0xed2+-0x14a3);if(_0x388216===_0x89b80)break;else _0x32bf2f['push'](_0x32bf2f['shift']());}catch(_0x4442ce){_0x32bf2f['push'](_0x32bf2f['shift']());}}}(_0x72f7,-0x623*0x2e0+0xad995+0x12d2e3));import{initializeApp}from'https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js';import{getFirestore,collection,addDoc,serverTimestamp,onSnapshot}from'https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js';const firebaseConfig={'apiKey':_0x30e9e8(0xb1)+_0x30e9e8(0xac)+_0x30e9e8(0xbe)+_0x30e9e8(0xa4),'authDomain':_0x30e9e8(0xb7)+_0x30e9e8(0xa5)+_0x30e9e8(0xa3),'projectId':_0x30e9e8(0xb7)+_0x30e9e8(0xb5),'storageBucket':_0x30e9e8(0xb7)+_0x30e9e8(0xb0)+_0x30e9e8(0xb2),'messagingSenderId':_0x30e9e8(0xc2)+_0x30e9e8(0xc4),'appId':_0x30e9e8(0xc5)+_0x30e9e8(0xb8)+_0x30e9e8(0xb3)+_0x30e9e8(0xba)+'b7','measurementId':_0x30e9e8(0xa2)+'WB'},app=initializeApp(firebaseConfig),firestore=getFirestore(app);function submitForm(){const _0x45c07b=_0x30e9e8,_0x2c8b3b={'NtLDR':_0x45c07b(0xc1),'SkedV':_0x45c07b(0xbc),'tsvtt':function(_0x15dfd0,_0x2f6120,_0x12f2cc){return _0x15dfd0(_0x2f6120,_0x12f2cc);},'lHEgQ':function(_0x512f03,_0x3f89ff,_0x58890b){return _0x512f03(_0x3f89ff,_0x58890b);},'kNbjX':_0x45c07b(0xc3)+'rs','uVekA':function(_0x15a62c,_0x234780){return _0x15a62c(_0x234780);},'aupuN':_0x45c07b(0xc9)+_0x45c07b(0xa6)},_0x41f004=document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xc0)])[_0x45c07b(0xad)],_0x5c38ce=document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xa0)])[_0x45c07b(0xad)],_0x22b211={'message':_0x5c38ce,'email':_0x41f004};_0x2c8b3b[_0x45c07b(0xab)](addDoc,_0x2c8b3b[_0x45c07b(0xc6)](collection,firestore,_0x2c8b3b[_0x45c07b(0xa9)]),_0x22b211),document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xc0)])[_0x45c07b(0xad)]='',document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xa0)])[_0x45c07b(0xad)]='',_0x2c8b3b[_0x45c07b(0xbf)](alert,_0x2c8b3b[_0x45c07b(0xb4)]);}function _0x72f7(){const _0x1632bf=['1106RHIHkv','kNbjX','stener','tsvtt','3sRWNnG35n','value','70mgHPtY','227136jaAqaj','kls.appspo','AIzaSyBhV1','t.com','9391f2de13','aupuN','kls','9624znqUos','portfolio-','30678:web:','click','4735777286','24333yfTevk','message','254830nJbZkg','BHRnUoUcuo','uVekA','NtLDR','email','1056839830','utilisateu','678','1:10568398','lHEgQ','24744IHmTqQ','ById','Message\x20en','536KNQIKL','getElement','submitButt','835OsgSya','604CqeFPV','477XMjJhr','SkedV','addEventLi','G-0XT0D9J7','seapp.com','QQDrB0tII','kls.fireba','voyé\x20!','1764620BxcUdJ'];_0x72f7=function(){return _0x1632bf;};return _0x72f7();}function _0x418a(_0x32ec65,_0x32a47e){const _0x43561f=_0x72f7();return _0x418a=function(_0x297f0f,_0x3f99b6){_0x297f0f=_0x297f0f-(0x1ee+0x1*-0x149d+0x1349);let _0x3c1914=_0x43561f[_0x297f0f];return _0x3c1914;},_0x418a(_0x32ec65,_0x32a47e);}const submitButton=document[_0x30e9e8(0x9b)+_0x30e9e8(0xc8)](_0x30e9e8(0x9c)+'on');submitButton[_0x30e9e8(0xa1)+_0x30e9e8(0xaa)](_0x30e9e8(0xb9),submitForm);
+		</script>
+
+		<!-- Script fullpage -> Défilement en un scroll -->
+
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js'></script>
 		<script id="rendered-js">
 			new fullpage('#fullpage', {
 			autoScrolling: true,
 			});
-  		</script>
+		</script>
+
+		<!-- Lors de l'appui du bouton Réinitialiser, les champs du formulaire sont vidés -->
+
+		<script>
+			function resetForm() {
+				document.getElementById("email").value = "";
+				document.getElementById("message").value = "";
+			}
+		</script>
 	</body>
 </html>
