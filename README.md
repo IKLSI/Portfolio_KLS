@@ -5,13 +5,13 @@ Ce projet représente mon portfolio personnel, conçu pour présenter mes compé
 ## Fonctionnalités
 
 - **Navigation en une page :** Le portfolio est structuré en différentes sections qui peuvent être parcourues en utilisant la navigation en une page fournie par la bibliothèque FullPage.js.
+- **Formulaire de contact :** L'utilisateur a la possibilité de laisser un message avec son adresse mail afin que je puisse en prendre connaissance.
 
 ## Technologies utilisées
 
 - HTML
 - CSS
 - JavaScript
-- FullPage.js
 
 ## Ressources externes
 
