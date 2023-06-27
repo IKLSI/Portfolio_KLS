@@ -62,10 +62,15 @@
 
 	#reseau img {
 		width: 160px;
-		height: 140px;
+		height: 120px;
 		padding: 5px;
-		border-radius: 20%;
-		overflow: hidden;
+		margin-left: 8%;
+	}
+
+	#reseau .Img_Git {
+		width: 70px;
+		height: 70px;
+		margin-left: 6%;
 	}
 
 	.setup-container p,
@@ -104,29 +109,34 @@
 	}
 
 	#setup img {
-		width: 275px;
-		height: 200px;
-		padding: 20px;
-		border-radius: 20%;
-		overflow: hidden;
+		width: 200px;
+		height: 150px;
+		padding: 0;
 	}
 
 	.project-card {
-		width: 40%;
+		width: 70%;
 		height: 70%;
-		margin-left: 4%;
+		margin-left: 2%;
 		text-align: center;
+		padding: 0;
 		font-size: 10px;
 		background-color: #333;
 	}
 
 	.project-card2 {
-		width: 40%;
+		width: 70%;
 		height: 70%;
-		margin-left: 45%;
+		margin-left: 30%;
 		text-align: center;
+		padding: 0;
 		font-size: 10px;
 		background-color: #333;
+	}
+
+	.parcours {
+		margin-top: 0;
+		font-size: 10px;
 	}
 
 	.etudes3, .etudes4 {
