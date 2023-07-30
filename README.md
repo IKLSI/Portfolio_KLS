@@ -1,21 +1,29 @@
-# Portfolio
+# Mon Portfolio
 
-Ce projet représente mon portfolio personnel, conçu pour présenter mes compétences et mes réalisations en tant que développeur. Ce portfolio est développé en utilisant des technologies web telles que HTML, CSS et JavaScript, avec l'utilisation de la bibliothèque FullPage.js.
+## Aperçu
 
-## Fonctionnalités
+![Aperçu du site](./IMAGES/Aperçu.PNG)
 
-- **Navigation en une page :** Le portfolio est structuré en différentes sections qui peuvent être parcourues en utilisant la navigation en une page fournie par la bibliothèque FullPage.js.
-- **Formulaire de contact :** L'utilisateur a la possibilité de laisser un message avec son adresse mail afin que je puisse en prendre connaissance.
+## Description
 
-## Technologies utilisées
+Ce dépôt contient le code de mon portfolio personnel, où je me présente ansi que mes projets, compétences et expériences en tant qu'étudiant en développement. Le site web est réalisé en HTML, CSS et JavaScript, conçu pour être responsive et accessible sur tous les appareils.
 
-- HTML
-- CSS
-- JavaScript
+## Table des matières
 
-## Ressources externes
+- Accueil
+- A propos de moi
+- Compétences
+- Projets
+- Parcours
+- Contact
 
-- [FullPage.js](https://github.com/alvarotrigo/fullPage.js) - Bibliothèque JavaScript utilisée pour la navigation en une page.
+## Navigation
+
+Le site dispose d'une barre de navigation simple en haut, qui permet aux utilisateurs de se déplacer vers différentes sections du portfolio.
+
+## Formulaire de contact
+
+Le site dispose d'un formulaire de contact relié à Firebase, qui permet aux utilisateurs de laisser un message avec leur adresse mail afin que je puisse en prendre connaissance.
 
 ## Auteur
 
