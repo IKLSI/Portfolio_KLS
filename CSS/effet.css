@@ -88,19 +88,10 @@
 
 /* Animation des images de la page d'accueil */
 
-.profil img {
+.avatar img {
 	width: 100%;
 	height: 100%;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
 	object-fit: cover;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
-
-.profil img:hover {
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
 }
 
 .social img {
@@ -109,7 +100,7 @@
 	margin: 0 10px;
 	-webkit-transition: .4s ease-in-out;
 	filter: blur(5px);
-	-webkit-filter: blur(5px);
+	-webkit-filter: blur(3px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
@@ -122,36 +113,4 @@
 	-moz-filter: blur(0px);
 	-o-filter: blur(0px);
 	-ms-filter: blur(0px);
-}
-
-/* Animation du message défilant de la page d'accueil */
-
-.message {
-	display: inline-block;
-	font-family: 'Orbitron',sans-serif;
-	font-size: 30px;
-	letter-spacing: 20px;
-	color: orange;
-	animation: flickerAnimation 1s linear infinite;
-}
-
-@keyframes flickerAnimation {
-	0%,
-	100% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0.5;
-	}
-}
-
-@keyframes scrollingAnimation {
-	from {
-		transform: translateX(100%);
-	}
-
-	to {
-		transform: translateX(-20%);
-	}
 }

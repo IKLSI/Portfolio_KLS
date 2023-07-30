@@ -1,27 +1,90 @@
-@media (max-width:600px) {
+/* Personnalisation éléments CSS pour rendre le site responsive */
+
+@media screen and (max-width:768px) {
 	body {
 		margin: 0;
 		padding: 0;
 		text-align: center;
-		font-family: 'Orbitron',sans-serif;
+	}
+
+	header {
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		text-align: center;
+	}
+
+	header img {
+		margin-left: -50px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	#Front_Back h1,
+	#Competences h1,
+	#Projets h1,
+	#Parcours h1 {
+		margin-top: 20%;
+	}
+
+	/* Personnalisation Menu */
+
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav ul {
+		display: none;
+		margin-left: -50%;
+	}
+
+	nav ul.show {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#menu_Button {
+		display: block;
+		position: relative;
+		margin-left: -18%;
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-weight: bold;
 		color: white;
-		background-color: black;
+		background-color: #212121;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 	}
 
-	.profil {
-		width: 300px;
-		height: 300px;
-		margin: 0 auto;
+	/* Personnalisation des différentes sections de la page */
+
+	.section {
+		height: auto;
+		margin-top: 5%;
+		padding: 20px;
 	}
 
-	.lettre {
-		letter-spacing: 8px;
-	}
+	/* Personnalisation section accueil */
 
 	.volet_Accueil {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.lettre {
+		letter-spacing: 7px;
+	}
+
+	.avatar {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
 	}
 
 	.social {
@@ -34,122 +97,104 @@
 		margin: 5px;
 	}
 
-	.section {
-		height: auto;
-		margin-top: 5%;
-		padding: 20px;
+	/* Personnalisation section personnel */
+
+	.buttons_Presentation {
+		position: absolute;
+		top: 10px;
+		left: 0%;
 	}
 
-	.langage img {
-		width: 80px;
-		height: 80px;
-		margin-left: 4%;
-		border-radius: 50%;
-		overflow: hidden;
+	.buttons_Presentation button {
+		width: 100%;
+		margin: 5px;
+		font-size: 12px;
 	}
 
-	.framework img {
-		width: 160px;
-		margin-top: 15%;
-		margin-left: 4%;
+	.buttons_Presentation button.active {
+		font-size: 16px;
 	}
 
-	.bdd img {
-		width: 160px;
-		margin-top: 15%;
-		margin-left: 4%;
+	.card,
+	.card.langage {
+		margin-top: 100%;
 	}
 
-	#reseau img {
-		width: 160px;
-		height: 120px;
-		padding: 5px;
-		margin-left: 8%;
-	}
+	/* Personnalisation section Front & Back */
 
-	#reseau .Img_Git {
-		width: 70px;
-		height: 70px;
-		margin-left: 6%;
-	}
-
-	.setup-container p,
-	.reseau-container p {
-		margin-left: 4%;
-	}
-
-	h1 {
-		font-size: 24px;
-	}
-
-	.langage-container,
-	.framework-container,
-	.bdd-container,
-	.reseau-container,
-	.project-container,
-	.competences-container,
-	.parcours-container,
-	.setup-container {
+	.technologie {
 		display: grid;
 		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 		grid-gap: 10px;
 	}
 
-	.project-card,
-	.project-card2,
+	.framework,
+	.framework2 {
+		height: 320px;
+		margin-left: 0;
+		max-width: 300px;
+		font-size: 12px;
+	}
+
+	.framework img,
+	.framework2 img {
+		width: 100px;
+	}
+
+	/* Augmentation taille de police des élements textuels de la section compétences */
+
+	.content {
+		font-size: 15px;
+	}
+
+	.carte_Projet,
 	.competences,
-	.parcours,
-	.setup-item {
+	.parcours {
 		margin: 10px;
 		padding: 20px;
 	}
 
-	.content {
-		font-size: 14px;
-	}
+	/* Personnalisation section projets */
 
-	#setup img {
-		width: 200px;
-		height: 150px;
-		padding: 0;
-	}
-
-	.project-card {
+	.carte_Projet {
 		width: 70%;
 		height: 70%;
-		margin-left: 2%;
-		text-align: center;
+		margin-left: 13%;
 		padding: 0;
 		font-size: 10px;
-		background-color: #333;
 	}
 
-	.project-card2 {
-		width: 70%;
-		height: 70%;
-		margin-left: 30%;
-		text-align: center;
-		padding: 0;
-		font-size: 10px;
-		background-color: #333;
+	.carte_Projet img {
+		width: 50%;
+		height: 600px;
+		margin-left: -50%;
 	}
+
+	.contenu_Projet {
+		top: 0;
+		left: 65%;
+		width: 24%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.contenu_Projet h2 {
+		font-size: 16px;
+	}
+
+	/* Personnalisation section parcours */
 
 	.parcours {
 		margin-top: 0;
-		font-size: 10px;
+		font-size: 14px;
 	}
 
-	.etudes3, .etudes4 {
+	.etudes3,
+	.etudes4 {
 		margin-left: 5%;
 	}
 
-	@keyframes scrollingAnimation {
-		from {
-			transform: translateX(-100%);
-		}
-
-		to {
-			transform: translateX(-100%);
-		}
+	footer {
+		margin-top: 10%;
 	}
 }

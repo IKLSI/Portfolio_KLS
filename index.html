@@ -1,36 +1,63 @@
-<!-- Déclaration de la page index portfolio professionel -->
+<!-- Index Portfolio KLS -->
+<!-- Auteur: KLS -->
+
+<!-- Déclaration de la page -->
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Portfolio</title>
-		<link href="./IMAGES/Profil.jpg" rel="icon" type="image/x-icon"/>
-		<link rel="stylesheet" href="./CSS/style.css"/>
-		<link rel="stylesheet" href="./CSS/effet.css"/>
-		<link rel="stylesheet" href="./CSS/responsive.css"/>
-		<link rel="stylesheet" href="./CSS/formulaire.css"/>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="./IMAGES/Profil.jpg" rel="icon" type="image/x-icon">
+
+		<link rel="stylesheet" href="./CSS/style.css">
+		<link rel="stylesheet" href="./CSS/effet.css">
+		<link rel="stylesheet" href="./CSS/responsive.css">
+		<link rel="stylesheet" href="./CSS/formulaire.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 	</head>
+
+	<header>
+		<nav>
+			<ul>
+				<img src="./IMAGES/Avatar.png" alt="Avatar de profil">
+				<li>
+					<a href="#Accueil">Accueil</a>
+				</li>
+				<li>
+					<a href="#Personnel">A propos de moi</a>
+				</li>
+				<li>
+					<a href="#Competences">Compétences</a>
+				</li>
+				<li>
+					<a href="#Projets">Projets</a>
+				</li>
+				<li>
+					<a href="#Parcours">Parcours</a>
+				</li>
+				<li>
+					<a href="#Commentaire">Contact</a>
+				</li>
+			</ul>
+			<button id="menu_Button">MENU</button>
+		</nav>
+	</header>
+
+	<script src="./JS/menu.js"></script>
+
 	<body>
-
-		<!-- Déclaration de la section principale de full page -->
-
 		<div id="fullpage">
-
-			<!-- Message de bienvenue défilant  -->
-
-			<div id="defilement"></div>
-
-			<!-- Script js permettant ce message -->
-
-			<script src="./JS/animation.js"></script>
 
 			<!-- Section accueil -->
 
-			<div class="section" id="accueil">
+			<div class="section" id="Accueil">
 				<div class="volet_Accueil">
-					<div class="text">
+					<div class="contenu_Accueil">
 						<span class="lettre">L</span>
 						<span class="lettre">E</span>
 						<span class="lettre">V</span>
@@ -46,202 +73,249 @@
 						<span class="lettre">A</span>
 						<span class="lettre">N</span>
 						<span class="lettre">N</span>
+
 						<p>2003</p>
-						<p>Etudiant en But informatique ( Développement )</p>
-						<p>Développeur informatique</p>
+						<p>Bienvenue sur mon Portfolio</p>
+
+						<div>
+							<span>Je suis&nbsp;</span>
+							<span class="mot_Dynamique">Etudiant</span>
+						</div>
+
+						<!-- Déclaration du script permettant le changement de mot de façon écrite sur la page d'accueil -->
+						
+						<script src="./JS/animation.js"></script>
 					</div>
-					<div class="profil">
-						<img src="./IMAGES/Profil.jpg" alt="Ma photo de profil"/>
+
+					<div class="avatar">
+						<img src="https://github.com/abhisheknaiidu/abhisheknaiidu/raw/master/code.gif?raw=true" alt="Photo accueil">
 					</div>
 				</div>
 
 				<!-- Section social -->
 
 				<div class="social">
-					<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK">
-						<img src="https://www.huiledivine.com/wp-content/uploads/2014/12/linkedin.png" alt="LinkedIn"/>
-					</a>
 					<a href="https://github.com/IKLSI" target="_BLANK">
-						<img src="./IMAGES/Git.png" alt="GitHub"/>
+						<img src="./IMAGES/GitHub.png" alt="GitHub">
+					</a>
+					<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK" class="LinkedIn">
+						<img src="./IMAGES/Linkedin.png" alt="LinkedIn">
 					</a>
 				</div>
 			</div>
 
-			<!-- Section langages -->
+			<!-- Script pour la section about-me permettant l'animation des cartes selon la catégorie choisie ainsi que l'animation des boutons -->
 
-			<div class="section" id="langages">
-				<h1>Mes langages de programmation</h1>
-				<div class="langage-container">
-					<div class="langage">
-						<img src="https://liag.ft.unicamp.br/act/wp-content/uploads/sites/27/2023/01/HTML-CC.png" alt="HTML"/>
-						<img src="https://static.vecteezy.com/system/resources/previews/022/424/576/original/java-logo-editorial-free-vector.jpg" alt="Java"/>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+			<script src="./JS/bouton_carte.js"></script>
+
+			<script src="./JS/bouton_actif.js"></script>
+
+			<!-- Section A propos de moi -->
+
+			<div class="section" id="Personnel">
+				<div class="about-me">
+					<img src="https://media.istockphoto.com/id/1358013032/fr/photo/concept-de-d%C3%A9veloppement-web.jpg?s=170667a&w=0&k=20&c=ab5s8KN2TMJyaS8KWT4dDH8VRlBLioJEMyhECRCSa_w=" alt="Logo développement">
+
+					<!-- Bouton de catégorie | Par défaut Personnel est actif -->
+
+					<div class="buttons_Presentation">
+						<button id="personnel" class="active">Personnel</button>
+						<button id="langage">Langage</button>
+						<button id="centre">Centres d'intérêts</button>
 					</div>
-					<div class="langage">
-						<img src="https://logospng.org/download/css-3/logo-css-3-1536.png" alt="CSS"/>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" alt="C"/>
-					</div>
-					<div class="langage">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPvTmL1YdTOToOkJ2ZJfeZ2Ki1MsKkHN0i800o4JMr3wEK_EJmCfJQX4EOsIt-o2iR7OQ&usqp=CAU" alt="JavaScript"/>
-						<img src="https://cdn-icons-png.flaticon.com/512/2306/2306173.png" alt="SQL"/>
-					</div>
-					<div class="langage">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/langfr-220px-PHP-logo.svg.png" alt="PHP"/>
-						<img src="https://hocchudong.com/wp-content/uploads/2021/06/bash.png" alt="Bash"/>
+
+					<div class="contenu-Carte zone_Carte">
+
+						<!-- Cartes personnel -->
+
+						<div class="card personnel">
+							<img src="https://static.vecteezy.com/system/resources/previews/001/200/587/non_2x/school-png.png" alt="Ecole">
+							<p>Étudiant en développement informatique et étant passionné par le développement applicatif ainsi que la mise en place de services web</p>
+						</div>
+
+						<div class="card personnel">
+							<img src="https://cdn-icons-png.flaticon.com/512/31/31089.png" alt="Balise">
+							<p>Plûtot developpement web et orienté front-end je me laisse également séduire par le fullstack</p>
+						</div>
+
+						<div class="card personnel">
+							<img src="https://www.pngmart.com/files/21/Brain-PNG-Isolated-Picture.png" alt="Cerveau" class="Cerveau">
+							<p>Rigoureux, acharné, motivé, ponctuel et curieux je m'efforce de toujours donner le meilleur de moi-même dans les projets que j'entreprends</p>
+						</div>
+
+						<!-- Cartes langages -->
+
+						<div class="card langage">
+							<img src="./IMAGES/Web.png" alt="Web">
+							<p>HTML pour la structure, CSS pour l'esthétique, JavaScript pour l'interactivité, animations et enfin PHP pour la logique côté serveur</p>
+						</div>
+
+						<div class="card langage">
+							<img src="https://cdn-icons-png.flaticon.com/512/311/311357.png" alt="Java">
+							<p>En matière de développement applicatif l'utilisation de Java est de mise néanmoins je possède des connaissances en C et en Python</p>
+						</div>
+
+						<div class="card langage">
+							<img src="https://download.logo.wine/logo/Oracle_SQL_Developer/Oracle_SQL_Developer-Logo.wine.png" alt="SQL">
+							<p>Base de données<br>
+								PostgreSQL (études)<br>
+								MySQL (projets locaux/réseau)<br>
+								Firebase (projets personnels)</p>
+						</div>
+
+						<!-- Cartes centres d'intérêts -->
+
+						<div class="card centre">
+							<img src="https://cdn-icons-png.flaticon.com/512/2418/2418779.png" alt="Sport automobile">
+							<p>Passionné d'automobile, je suis fasciné par la technologie et l'ingénierie qui se cachent derrière les modèles de sport qui nous entourent. J'aime suivre les compétitions de sports automobiles et je m'intéresse également à la mécanique automobile</p>
+						</div>
+
+						<div class="card centre">
+							<img src="https://cdn-icons-png.flaticon.com/512/4488/4488216.png" alt="Batterie musique">
+							<p>Ayant un profond attrait depuis l'enfance pour la musique je joue de la batterie depuis 9 ans dans un groupe. La musique est également une source d'inspiration et de motivation dans mon travail quotidien</p>
+						</div>
+
+						<div class="card centre">
+							<img src="https://cdn-icons-png.flaticon.com/512/2460/2460229.png" alt="Informatique">
+							<p>A l'affût des dernières avancées technologiques et de nouvelles sources de connaissances, je cherche constamment à m'enrichir dans l'informatique et plus particulièrement le développement</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<!-- Section framework -->
+			<!-- Section Front & Back -->
 
-			<div class="section" id="framework">
-				<h1>Utilisation de Framework</h1>
-				<div class="framework-container">
+			<div class="section" id="Front_Back">
+				<h1>Réalisation FrontEnd & BackEnd</h1>
+				<div class="technologie">
 					<div class="framework">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React JS"/>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React JS">
+						<div class="contenu_Carte">
+							<h2>React JS</h2>
+							<p>Bibliothèque JavaScript me permettant de réaliser des applications Web responsive grâce à l'utilisation et la maniabilité des composants en réponse à des exigences de performance et de maintenabilité (Dashboard, To Do List ...)</p>
+						</div>
 					</div>
-					<div class="framework">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/langfr-220px-Node.js_logo.svg.png" alt="Node JS"/>
-					</div>
-				</div>
-			</div>
-
-			<!-- Section base de données -->
-
-			<div class="section" id="bdd">
-				<h1>Utilisation de base de données</h1>
-				<div class="bdd-container">
-					<div class="bdd">
-						<img src="https://i0.wp.com/sysreseau.net/wp-content/uploads/2020/06/postgre-1.png" alt="Postgresql"/>
-					</div>
-					<div class="bdd">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZxhIkLKe0NXghjaLEoPKZ7xWsDA02D3nSNCVQnWI2k8DcVei9Oi4rntikQsklgf64WE&usqp=CAU" alt="MySQL"/>
-					</div>
-					<div class="bdd">
-						<img src="https://firebase.google.com/images/social.png" alt="Firebase"/>
-					</div>
-				</div>
-			</div>
-
-			<!-- Section reseau -->
-
-			<div class="section" id="reseau">
-				<h1>Technologies serveur</h1>
-				<div class="reseau-container">
-					<div class="technology">
-						<img src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png" alt="Docker"/>
-						<p>Docker</p>
-					</div>
-					<div class="technology">
-						<img src="https://git-scm.com/images/logos/downloads/Git-Icon-White.png" alt="Git" class="Img_Git"/>
-						<p>Git</p>
-					</div>
-					<div class="technology">
-						<img src="https://www.logolynx.com/images/logolynx/bd/bd8962177155967a5845be5cfaba6910.png" alt="Apache"/>
-						<p>Apache</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Section projets -->
-
-			<div class="section" id="projets">
-				<h1>Exemple de mes projets</h1>
-				<div class="project-container">
-					<div class="project-card">
-						<h2>RC</h2>
-						<p>Projet WEB de présentation de modèles de voitures avec interface utilisateur et plateforme d'achat.</p>
-						<a href="https://github.com/IKLSI/RC">Voir plus</a>
-					</div>
-					<div class="project-card2">
-						<h2>Dépôt de fichiers</h2>
-						<p>Serveur mis en place sur Docker afin de déposer des fichiers sur un site web directement dans le container.</p>
-						<a href="https://github.com/IKLSI/docker-sae-203-equipe12-depot">Voir plus</a>
-					</div>
-					<div class="project-card">
-						<h2>Chat</h2>
-						<p>Projet WEB mis en place sur Docker afin de pouvoir discuter à plusieurs et en simultané à l'aide d'un chat.</p>
-						<a href="https://github.com/IKLSI/docker-sae-203-equipe12-chat">Voir plus</a>
-					</div>
-					<div class="project-card2">
-						<h2>Graphe</h2>
-						<p>Jeu de graphe en JAVA avec interface swing</p>
-						<a href="https://github.com/IKLSI/graphe-java">Voir plus</a>
+					<div class="framework2">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/langfr-220px-Node.js_logo.svg.png" alt="Node JS">
+						<div class="contenu_Carte">
+							<h2>Node JS</h2>
+							<p>Environnement d'exécution JavaScript me permettant de créer des applications Web et des outils côté serveur (Bot Discord, Collecte de données ...)</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- Section compétences -->
 
-			<div class="section" id="competences">
+			<div class="section" id="Competences">
 				<h1>Mes compétences</h1>
-				<div class="competences-container">
-					<div class="competences">
+				<div class="competences">
 
-						<!-- SVG permettant de faire un cercle avec du texte autour -->
+					<!-- SVG permettant de faire un cercle avec du texte autour -->
 
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
-							<circle class="circle" cx="19%" cy="50%" r="8%" />
-							<text class="content">
-								<textPath xlink:href="#circle1" startOffset="30%">Développement</textPath>
-							</text>
-							<circle class="circle" cx="34%" cy="50%" r="8%" />
-							<text class="content">
-								<textPath xlink:href="#circle2" startOffset="30%">Réseau</textPath>
-							</text>
-							<circle class="circle" cx="49%" cy="50%" r="8%" />
-							<text class="content">
-								<textPath xlink:href="#circle3" startOffset="40%">Résolution de problèmes</textPath>
-							</text>
-							<circle class="circle" cx="64%" cy="50%" r="8%" />
-							<text class="content">
-								<textPath xlink:href="#circle4" startOffset="30%">Gestion de projets</textPath>
-							</text>
-							<circle class="circle" cx="79%" cy="50%" r="8%" />
-							<text class="content">
-								<textPath xlink:href="#circle5" startOffset="30%">Travail d'équipe</textPath>
-							</text>
-							<path id="circle1" d="M190,40 A60,60 0 0,1 190,160" style="fill:none" />
-							<path id="circle2" d="M340,40 A60,60 0 0,1 340,160" style="fill:none" />
-							<path id="circle3" d="M490,40 A60,60 0 0,1 490,160" style="fill:none" />
-							<path id="circle4" d="M640,40 A60,60 0 0,1 640,160" style="fill:none" />
-							<path id="circle5" d="M790,40 A60,60 0 0,1 790,160" style="fill:none" />
-						</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
+						<circle class="circle" cx="19%" cy="50%" r="8%" />
+						<text class="content">
+							<textPath xlink:href="#circle1" startOffset="30%">Développement</textPath>
+						</text>
+
+						<circle class="circle" cx="34%" cy="50%" r="8%" />
+						<text class="content">
+							<textPath xlink:href="#circle2" startOffset="30%">Réseau</textPath>
+						</text>
+
+						<circle class="circle" cx="49%" cy="50%" r="8%" />
+						<text class="content">
+							<textPath xlink:href="#circle3" startOffset="40%">Résolution de problèmes</textPath>
+						</text>
+
+						<circle class="circle" cx="64%" cy="50%" r="8%" />
+						<text class="content">
+							<textPath xlink:href="#circle4" startOffset="30%">Gestion de projets</textPath>
+						</text>
+
+						<circle class="circle" cx="79%" cy="50%" r="8%" />
+						<text class="content">
+							<textPath xlink:href="#circle5" startOffset="30%">Travail d'équipe</textPath>
+						</text>
+
+						<path id="circle1" d="M190,40 A60,60 0 0,1 190,160" style="fill:none" />
+						<path id="circle2" d="M340,40 A60,60 0 0,1 340,160" style="fill:none" />
+						<path id="circle3" d="M490,40 A60,60 0 0,1 490,160" style="fill:none" />
+						<path id="circle4" d="M640,40 A60,60 0 0,1 640,160" style="fill:none" />
+						<path id="circle5" d="M790,40 A60,60 0 0,1 790,160" style="fill:none" />
+					</svg>
+				</div>
+			</div>
+
+			<!-- Section projets -->
+
+			<div class="section" id="Projets">
+				<h1>Projets réalisés</h1>
+				<div class="zone_Projet">
+					<div class="carte_Projet">
+						<img src="https://iklsi.github.io/RC/src/IMAGES/Mojave.jpg" alt="Photo de profil">
+						<div class="contenu_Projet">
+							<h2>RC</h2>
+							<p>Projet WEB de présentation de modèles de voitures avec interface utilisateur et plateforme d'achat.</p>
+							<a href="https://github.com/IKLSI/RC">Voir plus</a>
+						</div>
+					</div>
+
+					<div class="carte_Projet">
+						<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/db239c70550991.5ba7922b61759.png" alt="Photo de profil" class="Dash">
+						<div class="contenu_Projet">
+							<h2>Dashboard</h2>
+							<p>Projet WEB permettant de visualiser différentes données provenant de mon GitHub personnel réalisé en React JS et entièrement responsive.</p>
+							<a href="https://github.com/IKLSI/Dashboard">Voir plus</a>
+						</div>
+					</div>
+
+					<div class="carte_Projet">
+						<img src="https://static.vecteezy.com/ti/vecteur-libre/p1/2209482-illustration-de-developpement-application-mobile-gratuit-vectoriel.jpg" alt="Photo de profil" class="Graphe">
+						<div class="contenu_Projet">
+							<h2>Graphe</h2>
+							<p>Jeu de parcours sous forme d'un graphe avec différentes fonctionnalitées en JAVA sous interface Swing</p>
+							<a href="https://github.com/IKLSI/graphe-java">Voir plus</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- Section parcours -->
 
-			<div class="section" id="parcours">
+			<div class="section" id="Parcours">
 				<h1>Mon parcours d'études</h1>
-				<div class="parcours-container">
+				<div>
 					<div class="parcours">
 						<span class="annee">2023</span>
-						<span class="arrow">&#8594;</span>
+						<span class="fleche">&#8594;</span>
 						<span class="annee">2024</span><br>
 						<span class="etudes">BUT 2 Informatique</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">2022</span>
-						<span class="arrow">&#8594;</span>
+						<span class="fleche">&#8594;</span>
 						<span class="annee">2023</span><br>
 						<span class="etudes2">BUT 1 Informatique</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">2021</span>
-						<span class="arrow">&#8594;</span>
+						<span class="fleche">&#8594;</span>
 						<span class="annee">2022</span><br>
 						<span class="etudes3">Licence MIPSI</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">Août</span>
-						<span class="arrow">&#8594;</span>
+						<span class="fleche">&#8594;</span>
 						<span class="annee">2021</span><br>
 						<span class="etudes3">Permis B AAC</span>
 					</div>
 					<div class="parcours">
 						<span class="annee">2018</span>
-						<span class="arrow">&#8594;</span>
+						<span class="fleche">&#8594;</span>
 						<span class="annee">2021</span><br>
 						<span class="etudes4">
 							Bac général<br>
@@ -252,26 +326,9 @@
 				</div>
 			</div>
 
-			<!-- Section setup -->
-
-			<div class="section" id="setup">
-				<h1>Mon setup</h1>
-				<div class="setup-container">
-					<div class="setup-item">
-						<img src="./IMAGES/PC.jpg" alt="PC Fixe"/>
-						<p>PC Fixe custom</p>
-					</div>
-					<div class="setup-item">
-						<img src="https://lescahiersdudebutant.fr/wp-content/uploads/2020/01/acer-nitro-5-an515-avis.jpg" alt="PC Portable"/>
-						<p>PC Portable Acer Nitro 5</p>
-					</div>
-				</div>
-			</div>
-
 			<!-- Section contact -->
 
-			<div class="section" id="commentaire">
-				<h1>Formulaire de contact</h1>
+			<div class="section" id="Commentaire">
 				<div class="background">
 					<div class="container">
 						<div class="screen">
@@ -293,15 +350,17 @@
 										<span>CONTACTEZ</span>
 										<span>MOI</span>
 									</div>
-									<div class="app-contact"><a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/">CONTACT INFO</a></div>
+									<div class="app-contact">
+										<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/">CONTACT INFO</a>
+									</div>
 								</div>
 								<div class="screen-body-item">
 									<div class="app-form">
 										<div class="app-form-group">
-											<input class="app-form-control" id="email" placeholder="EMAIL" required/>
+											<input class="app-form-control" id="email" placeholder="EMAIL" required>
 										</div>
 										<div class="app-form-group message">
-											<input class="app-form-control" id="message" placeholder="MESSAGE" required/>
+											<input class="app-form-control" id="message" placeholder="MESSAGE" required>
 										</div>
 										<div class="app-form-group buttons">
 											<button class="app-form-button" onclick="resetForm()">RÉINITIALISER</button>
@@ -315,12 +374,20 @@
 				</div>
 			</div>
 
-			<!-- Pied de page -->
-
-			<footer class="section">
-				Kyliann LEVESQUE<br><br>
-				A la recherche d'une alternance ou d'un stage pour 2024 dans le domaine du développement informatique, réseau ou sécurité.<br><br>
-				<script src="./JS/date.js"></script>
+			<footer>
+				<div class="contenu_Footer">
+					<div class="footer_Section">
+						<h3>Réseaux sociaux</h3>
+						<ul class="social-icons">
+						<li><a href="https://github.com/IKLSI" target="_BLANK"><img src="./IMAGES/GitHub.png" alt="GitHub"></a></li>
+						<li><a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLZNK"><img src="./IMAGES/Linkedin.png" alt="LinkedIn"></a></li>
+						</ul>
+					</div>
+					<div class="footer_Section">
+						<h3>Mentions légales</h3>
+						<p>Tous droits réservés &copy; 2023</p>
+					</div>
+				</div>
 			</footer>
 		</div>
 
@@ -328,26 +395,19 @@
 
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-		<script type="module">
-			const _0x30e9e8=_0x418a;(function(_0x31aefc,_0x89b80){const _0x3fabfa=_0x418a,_0x32bf2f=_0x31aefc();while(!![]){try{const _0x388216=parseInt(_0x3fabfa(0x9d))/(0x6fd*0x2+0x1074+0x1e6d*-0x1)*(parseInt(_0x3fabfa(0x9a))/(-0x256d+0x5*0x6e2+0x305))+parseInt(_0x3fabfa(0xbb))/(0x1*-0x11d9+-0x3ee+0xae5*0x2)*(parseInt(_0x3fabfa(0x9e))/(-0x436+-0xeef+-0x5*-0x3d5))+parseInt(_0x3fabfa(0xae))/(0x143f*0x1+0x1ba4+-0x2fde*0x1)*(parseInt(_0x3fabfa(0xb6))/(-0x1*0x172d+0xc79+-0x55d*-0x2))+parseInt(_0x3fabfa(0xa8))/(0x15*-0x61+0x873*0x3+-0x115d)*(parseInt(_0x3fabfa(0xc7))/(0x3eb+0x598+0x329*-0x3))+parseInt(_0x3fabfa(0x9f))/(0x1b98+0x25fa+-0x1*0x4189)*(-parseInt(_0x3fabfa(0xbd))/(0x373*0x2+0xd1*0x2f+0x1*-0x2d3b))+parseInt(_0x3fabfa(0xa7))/(-0x36f+-0x1*0x6fb+-0xa75*-0x1)+parseInt(_0x3fabfa(0xaf))/(0x5dd+0xed2+-0x14a3);if(_0x388216===_0x89b80)break;else _0x32bf2f['push'](_0x32bf2f['shift']());}catch(_0x4442ce){_0x32bf2f['push'](_0x32bf2f['shift']());}}}(_0x72f7,-0x623*0x2e0+0xad995+0x12d2e3));import{initializeApp}from'https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js';import{getFirestore,collection,addDoc,serverTimestamp,onSnapshot}from'https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js';const firebaseConfig={'apiKey':_0x30e9e8(0xb1)+_0x30e9e8(0xac)+_0x30e9e8(0xbe)+_0x30e9e8(0xa4),'authDomain':_0x30e9e8(0xb7)+_0x30e9e8(0xa5)+_0x30e9e8(0xa3),'projectId':_0x30e9e8(0xb7)+_0x30e9e8(0xb5),'storageBucket':_0x30e9e8(0xb7)+_0x30e9e8(0xb0)+_0x30e9e8(0xb2),'messagingSenderId':_0x30e9e8(0xc2)+_0x30e9e8(0xc4),'appId':_0x30e9e8(0xc5)+_0x30e9e8(0xb8)+_0x30e9e8(0xb3)+_0x30e9e8(0xba)+'b7','measurementId':_0x30e9e8(0xa2)+'WB'},app=initializeApp(firebaseConfig),firestore=getFirestore(app);function submitForm(){const _0x45c07b=_0x30e9e8,_0x2c8b3b={'NtLDR':_0x45c07b(0xc1),'SkedV':_0x45c07b(0xbc),'tsvtt':function(_0x15dfd0,_0x2f6120,_0x12f2cc){return _0x15dfd0(_0x2f6120,_0x12f2cc);},'lHEgQ':function(_0x512f03,_0x3f89ff,_0x58890b){return _0x512f03(_0x3f89ff,_0x58890b);},'kNbjX':_0x45c07b(0xc3)+'rs','uVekA':function(_0x15a62c,_0x234780){return _0x15a62c(_0x234780);},'aupuN':_0x45c07b(0xc9)+_0x45c07b(0xa6)},_0x41f004=document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xc0)])[_0x45c07b(0xad)],_0x5c38ce=document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xa0)])[_0x45c07b(0xad)],_0x22b211={'message':_0x5c38ce,'email':_0x41f004};_0x2c8b3b[_0x45c07b(0xab)](addDoc,_0x2c8b3b[_0x45c07b(0xc6)](collection,firestore,_0x2c8b3b[_0x45c07b(0xa9)]),_0x22b211),document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xc0)])[_0x45c07b(0xad)]='',document[_0x45c07b(0x9b)+_0x45c07b(0xc8)](_0x2c8b3b[_0x45c07b(0xa0)])[_0x45c07b(0xad)]='',_0x2c8b3b[_0x45c07b(0xbf)](alert,_0x2c8b3b[_0x45c07b(0xb4)]);}function _0x72f7(){const _0x1632bf=['1106RHIHkv','kNbjX','stener','tsvtt','3sRWNnG35n','value','70mgHPtY','227136jaAqaj','kls.appspo','AIzaSyBhV1','t.com','9391f2de13','aupuN','kls','9624znqUos','portfolio-','30678:web:','click','4735777286','24333yfTevk','message','254830nJbZkg','BHRnUoUcuo','uVekA','NtLDR','email','1056839830','utilisateu','678','1:10568398','lHEgQ','24744IHmTqQ','ById','Message\x20en','536KNQIKL','getElement','submitButt','835OsgSya','604CqeFPV','477XMjJhr','SkedV','addEventLi','G-0XT0D9J7','seapp.com','QQDrB0tII','kls.fireba','voyé\x20!','1764620BxcUdJ'];_0x72f7=function(){return _0x1632bf;};return _0x72f7();}function _0x418a(_0x32ec65,_0x32a47e){const _0x43561f=_0x72f7();return _0x418a=function(_0x297f0f,_0x3f99b6){_0x297f0f=_0x297f0f-(0x1ee+0x1*-0x149d+0x1349);let _0x3c1914=_0x43561f[_0x297f0f];return _0x3c1914;},_0x418a(_0x32ec65,_0x32a47e);}const submitButton=document[_0x30e9e8(0x9b)+_0x30e9e8(0xc8)](_0x30e9e8(0x9c)+'on');submitButton[_0x30e9e8(0xa1)+_0x30e9e8(0xaa)](_0x30e9e8(0xb9),submitForm);
-		</script>
+		<script type="module" src="./JS/firebase.js"></script>
 
 		<!-- Script fullpage -> Défilement en un scroll -->
 
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js'></script>
+		<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js'></script>
 		<script id="rendered-js">
 			new fullpage('#fullpage', {
 			autoScrolling: true,
 			});
-		</script>
+		</script> -->
 
 		<!-- Lors de l'appui du bouton Réinitialiser, les champs du formulaire sont vidés -->
 
-		<script>
-			function resetForm() {
-				document.getElementById("email").value = "";
-				document.getElementById("message").value = "";
-			}
-		</script>
+		<script src="./JS/reset_formulaire.js"></script>
 	</body>
 </html>
