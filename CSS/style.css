@@ -61,7 +61,7 @@ nav ul li a:hover {
 	border-bottom: 2px solid cyan;
 }
 
-#menu_Button {
+.btn {
 	display: none;
 }
 
