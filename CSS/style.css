@@ -50,7 +50,7 @@ nav ul li {
 	margin: 0 4rem;
 }
 
-ul li a {
+nav ul li a {
 	position: relative;
 	font-size: 20px;
 	text-decoration: none;
@@ -59,7 +59,7 @@ ul li a {
 	color: #fff;
 }
 
-ul li a::before {
+nav ul li a::before {
 	content: attr(data-text);
 	position: absolute;
 	width: 0;
@@ -69,11 +69,11 @@ ul li a::before {
 	border-bottom: 2px solid cyan;
 }
 
-ul li a:hover::before {
+nav ul li a:hover::before {
 	width: 100%;
 }
 
-ul li a:hover {
+nav ul li a:hover {
 	transition: 2s;
 	color: cyan;
 }
