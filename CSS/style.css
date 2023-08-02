@@ -50,15 +50,32 @@ nav ul li {
 	margin: 0 4rem;
 }
 
-nav ul li a {
-	text-decoration: none;
+ul li a {
+	position: relative;
 	font-size: 20px;
-	font-weight: bold;
-	color: white;
+	text-decoration: none;
+	line-height: 1em;
+	letter-spacing: 2px;
+	color: #fff;
 }
 
-nav ul li a:hover {
+ul li a::before {
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	overflow: hidden;
+	transition: 1s;
+	-webkit-text-stroke: 2px cyan;
 	border-bottom: 2px solid cyan;
+}
+
+ul li a:hover::before {
+	width: 100%;
+}
+
+ul li a:hover {
+	transition: 2s;
+	color: cyan;
 }
 
 .btn {
