@@ -19,15 +19,14 @@
 		<link rel="stylesheet" href="./CSS/formulaire.css">
 
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	</head>
 
 	<header>
 		<nav>
 			<ul>
 				<img src="./IMAGES/Avatar.png" alt="Avatar de profil">
-				<li>
-					<a href="#Accueil" data-text="Accueil">Accueil</a>
-				</li>
 				<li>
 					<a href="#Personnel" data-text="About">About</a>
 				</li>
@@ -40,8 +39,21 @@
 				<li>
 					<a href="#Parcours" data-text="Parcours">Parcours</a>
 				</li>
+				<li class="icone_Menu">
+					<a href="#Accueil">
+						<img src="https://www.icone-png.com/png/54/53524.png" alt="Contact">
+					</a>
+				</li>
 				<li>
-					<a href="#Commentaire" data-text="Contact">Contact</a>
+					<a href="#Commentaire">
+						<img src="https://www.freeiconspng.com/thumbs/contact-icon-png/contact-icon-17.png" alt="Contact">
+					</a>
+				</li>
+				<li>
+					<button id="mode" class="mode">
+						<span class="soleil"></span>
+						<span class="lune"></span>
+					</button>
 				</li>
 			</ul>
 			<div class="btn">
@@ -56,6 +68,8 @@
 
 	<body>
 		<div id="fullpage">
+
+			<div id="particles-js"></div>
 
 			<!-- Section accueil -->
 
@@ -397,6 +411,14 @@
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 		<script type="module" src="./JS/firebase.js"></script>
+
+		<!-- Script permettant les animations sur le background -->
+
+		<script src="./JS/background.js"></script>
+
+		<!-- Script permettant le changement de mode sombre à lumière et inversement -->
+
+		<script src="./JS/bouton_mode.js"></script>
 
 		<!-- Script fullpage -> Défilement en un scroll -->
 

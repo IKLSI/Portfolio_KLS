@@ -6,7 +6,7 @@
 
 ## Description
 
-Ce dépôt contient le code de mon portfolio personnel, où je me présente ansi que mes projets, compétences et expériences en tant qu'étudiant en développement. Le site web est réalisé en HTML, CSS et JavaScript, conçu pour être responsive et accessible sur tous les appareils.
+Ce dépôt contient le code de mon portfolio personnel, où je me présente ainsi que mes projets, compétences et expériences en tant qu'étudiant en développement. Le site web est réalisé en HTML, CSS et JavaScript, conçu pour être responsive et accessible sur tous les appareils.
 
 ## Table des matières
 
@@ -28,4 +28,3 @@ Le site dispose d'un formulaire de contact relié à Firebase, qui permet aux ut
 ## Auteur
 
 Kyliann LEVESQUE - [LinkedIn](https://www.linkedin.com/in/kyliann-levesque-87711a277/) - [GitHub](https://github.com/IKLSI)
-

@@ -9,11 +9,11 @@ body {
 	color: white;
 	background-color: #212121;
 	scroll-behavior: smooth;
+	transition: background-color 0.5s ease;
 }
 
 header {
 	display: flex;
-	z-index: 999;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -21,13 +21,14 @@ header {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	z-index: 999;
 	background-color: #212121;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
 }
 
 header img {
-	width: 78px;
-	height: 80px;
+	width: 73px;
+	height: 75px;
 	margin-top: 10px;
 	border-radius: 50%;
 }
@@ -47,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-	margin: 0 4rem;
+	margin: 0 2rem;
 }
 
 nav ul li a {
@@ -59,13 +60,18 @@ nav ul li a {
 	color: #fff;
 }
 
+nav ul li a img {
+	width: 40px;
+	height: 40px;
+	filter: grayscale(100%);
+}
+
 nav ul li a::before {
 	content: attr(data-text);
 	position: absolute;
 	width: 0;
 	overflow: hidden;
 	transition: 1s;
-	-webkit-text-stroke: 2px cyan;
 	border-bottom: 2px solid cyan;
 }
 
@@ -73,10 +79,54 @@ nav ul li a:hover::before {
 	width: 100%;
 }
 
-nav ul li a:hover {
-	transition: 2s;
-	color: cyan;
+.icone_Menu {
+	margin-left: 20%;
 }
+
+/* Personnalisation Bouton Dark Light */
+
+.mode {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.soleil,
+.lune {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.soleil::before,
+.lune::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+}
+
+.soleil::before {
+	background-image: url('https://cdn-icons-png.flaticon.com/512/753/753241.png');
+	background-size: cover;
+}
+
+.lune::before {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Lune_ico.png');
+	background-size: cover;
+}
+
+/* Désactiver bouton pour responsive */
 
 .btn {
 	display: none;
@@ -89,6 +139,17 @@ nav ul li a:hover {
 	flex-direction: column;
 	height: 100vh;
 	margin-top: 3%;
+}
+
+/* Personnalisation de l'effet sur le background */
+
+#particles-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
 #Front_Back h1,
@@ -116,15 +177,14 @@ nav ul li a:hover {
 }
 
 .mot_Dynamique {
-	font-family: 'Poppins',sans-serif;
 	font-size: 26px;
 	font-weight: bold;
 	color: cyan;
 }
 
 .avatar {
-	width: 500px;
-	height: 500px;
+	width: 450px;
+	height: 450px;
 	margin-left: 25%;
 	border-radius: 50%;
 	overflow: hidden;
@@ -140,6 +200,11 @@ nav ul li a:hover {
 .social .LinkedIn {
 	margin-right: 40px;
 	margin-left: 80px;
+}
+
+.social a img {
+	width: 110px;
+	height: 110px;
 }
 
 /* Section about-me */
@@ -473,7 +538,8 @@ footer {
 	padding: 20px;
 	text-align: center;
 	color: #fff;
-	background-color: #333;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+	background-color: #212121;
 }
 
 .contenu_Footer {
