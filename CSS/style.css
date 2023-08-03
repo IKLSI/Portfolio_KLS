@@ -8,12 +8,13 @@ body {
 	font-family: 'Poppins',sans-serif;
 	color: white;
 	background-color: #212121;
-	scroll-behavior: smooth;
 	transition: background-color 0.5s ease;
+	scroll-behavior: smooth;
 }
 
 header {
 	display: flex;
+	z-index: 999;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -21,7 +22,6 @@ header {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	z-index: 999;
 	background-color: #212121;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
 }
@@ -53,8 +53,8 @@ nav ul li {
 
 nav ul li a {
 	position: relative;
-	font-size: 20px;
 	text-decoration: none;
+	font-size: 20px;
 	line-height: 1em;
 	letter-spacing: 2px;
 	color: #fff;
@@ -70,9 +70,9 @@ nav ul li a::before {
 	content: attr(data-text);
 	position: absolute;
 	width: 0;
+	border-bottom: 2px solid cyan;
 	overflow: hidden;
 	transition: 1s;
-	border-bottom: 2px solid cyan;
 }
 
 nav ul li a:hover::before {
@@ -86,14 +86,14 @@ nav ul li a:hover::before {
 /* Personnalisation Bouton Dark Light */
 
 .mode {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	outline: none;
 	display: inline-block;
+	position: relative;
 	width: 40px;
 	height: 40px;
-	position: relative;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .soleil,
@@ -111,9 +111,9 @@ nav ul li a:hover::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 20px;
 	height: 20px;
+	transform: translate(-50%, -50%);
 }
 
 .soleil::before {
@@ -144,12 +144,12 @@ nav ul li a:hover::before {
 /* Personnalisation de l'effet sur le background */
 
 #particles-js {
+	z-index: -1;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
 }
 
 #Front_Back h1,
@@ -203,8 +203,8 @@ nav ul li a:hover::before {
 }
 
 .social a img {
-	width: 110px;
-	height: 110px;
+	width: 130px;
+	height: 130px;
 }
 
 /* Section about-me */
@@ -216,8 +216,8 @@ nav ul li a:hover::before {
 }
 
 .about-me img {
-	width: 500px;
-	height: 500px;
+	width: 450px;
+	height: 450px;
 	margin-left: 10%;
 	border-radius: 50%;
 	overflow: hidden;
@@ -269,7 +269,7 @@ nav ul li a:hover::before {
 
 .buttons_Presentation button.active {
 	border-bottom: 2px solid cyan;
-	font-size: 24px;
+	font-size: 20px;
 	transition: transform 0.4s;
 	transform: translateY(-20px);
 }
@@ -311,6 +311,10 @@ nav ul li a:hover::before {
 
 .card.langage p {
 	font-size: 14px;
+}
+
+.card.centre {
+	margin-top: 60px;
 }
 
 .card.langage img,
@@ -389,6 +393,7 @@ nav ul li a:hover::before {
 	overflow: hidden;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease;
+	background-color: #212121;
 }
 
 .carte_Projet img {
@@ -538,8 +543,8 @@ footer {
 	padding: 20px;
 	text-align: center;
 	color: #fff;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
 	background-color: #212121;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
 }
 
 .contenu_Footer {
