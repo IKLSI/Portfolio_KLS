@@ -83,6 +83,7 @@ nav ul li a img {
 
 nav ul li a::before {
 	content: attr(data-text);
+	color: transparent;
 	position: absolute;
 	width: 0;
 	border-bottom: 2px solid cyan;
@@ -100,52 +101,52 @@ nav ul li a:hover::before {
 
 /* Personnalisation Bouton Dark Light */
 
-.mode {
-	display: inline-block;
+label {
+	width: 70px;
+	height: 32px;
 	position: relative;
-	width: 40px;
-	height: 40px;
-	border: none;
-	outline: none;
-	background-color: transparent;
+	display: block;
+	border-radius: 200px;
+	box-shadow: inset 0 -5px 15px rgba(0,0,0,0.4), inset 0 5px 15px rgba(255,255,255,0.4);
 	cursor: pointer;
+	transition: 0.3s;
+	margin-top: -20%;
+	background: #fff;
 }
 
-.soleil,
-.lune {
+label:after {
+	content: '';
+	width: 35px;
+	height: 30px;
+	left: 1px;
+	top: 1px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	background: linear-gradient(180deg, #777, #3a3a3a);
+	border-radius: 30px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	transition: 0.3s;
 }
 
-.soleil::before,
-.lune::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 20px;
-	height: 20px;
-	transform: translate(-50%, -50%);
+li input {
+	width: 0;
+	height: 0;
+	visibility: hidden;
 }
 
-.soleil::before {
-	background-image: url('https://cdn-icons-png.flaticon.com/512/753/753241.png');
-	background-size: cover;
+input:checked + label {
+	background: #242424;
 }
 
-.lune::before {
-	background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Lune_ico.png');
-	background-size: cover;
+input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+	background: linear-gradient(180deg, #ffcc89, #d8860b);
 }
 
 /* Personnalisation page avec light mode */
 
 .light-mode {
 	color: #212121;
-	background-color: #fff;
 }
 
 .light-mode svg text {
@@ -154,8 +155,7 @@ nav ul li a:hover::before {
 
 .light-mode #Accueil .social img,
 .light-footer .footer_Section img {
-	border-radius: 20%;
-	background-color: #212121;
+	filter: drop-shadow(0 0 1rem black);
 }
 
 .light-header,
@@ -219,7 +219,7 @@ progress::-webkit-progress-value {
 /* Personnalisation de l'effet sur le background */
 
 #particles-js {
-	z-index: -1;
+	z-index: -100;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -538,6 +538,10 @@ progress::-webkit-progress-value {
 	justify-content: center;
 }
 
+.competences {
+	margin-top: 0;
+}
+
 .circle {
 	fill: #333;
 	stroke: orange;
@@ -555,7 +559,7 @@ progress::-webkit-progress-value {
 /* Section parcours */
 
 #Parcours h1 {
-	margin-top: 60%;
+	margin-top: 15%;
 	margin-bottom: 5%;
 }
 
@@ -592,7 +596,7 @@ progress::-webkit-progress-value {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-top: 25%;
+	margin-top: 16%;
 }
 
 /* Personnalisation champs de saisie et bouton du formulaire */
@@ -628,7 +632,7 @@ input {
 /* Style pour le footer */
 
 footer {
-	margin-top: -8%;
+	margin-top: 8%;
 	padding: 20px;
 	text-align: center;
 	color: #fff;

@@ -21,6 +21,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 	</head>
 
 	<header>
@@ -50,10 +52,8 @@
 					</a>
 				</li>
 				<li>
-					<button id="mode" class="mode">
-						<span class="soleil"></span>
-						<span class="lune"></span>
-					</button>
+					<input type="checkbox" id="boutonMode">
+					<label for="boutonMode"></label>
 				</li>
 			</ul>
 			<div class="btn">
@@ -278,7 +278,7 @@
 						<img src="https://iklsi.github.io/RC/src/IMAGES/Mojave.jpg" alt="Photo de profil">
 						<div class="contenu_Projet">
 							<h2>RC</h2>
-							<p>Projet WEB de présentation de modèles de voitures avec interface utilisateur et plateforme d'achat.</p>
+							<p>Projet WEB de présentation de modèles de voitures avec interface utilisateur et plateforme d'achat non active.</p>
 							<a href="https://github.com/IKLSI/RC" target="_BLANK">Voir plus</a>
 						</div>
 					</div>
@@ -293,13 +293,21 @@
 					</div>
 
 					<div class="carte_Projet">
-						<img src="https://static.vecteezy.com/ti/vecteur-libre/p1/2209482-illustration-de-developpement-application-mobile-gratuit-vectoriel.jpg" alt="Photo de profil" class="Graphe">
+						<img src="https://us.123rf.com/450wm/dykc/dykc1903/dykc190300080/119345488-élément-de-modèle-de-conception-d-icône-de-logo-lettre-g-3d-illustration-vectorielle.jpg?ver=6" alt="Photo de profil" class="Graphe">
 						<div class="contenu_Projet">
 							<h2>Graphe</h2>
-							<p>Jeu de parcours sous forme d'un graphe avec différentes fonctionnalitées en JAVA sous interface Swing</p>
+							<p>Jeu de parcours sous forme d'un graphe avec différentes fonctionnalitées imposées en JAVA sous interface Swing</p>
 							<a href="https://github.com/IKLSI/graphe-java" target="_BLANK">Voir plus</a>
 						</div>
 					</div>
+
+					<div class="carte_Projet">
+						<img src="https://imgs.search.brave.com/Gx28c-HRq-m23g3Xe9Jv4gbgwtuVk9gi5rsi-_e3Cz0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy8yMDIz/LWJtdy1tNC1jc2wt/ZHJpdmUtMTAzLTE2/NjQxNTg4NDkuanBn/P3Jlc2l6ZT05ODA6/Kg" alt="Photo de profil" class="Bot">
+						<div class="contenu_Projet">
+							<h2>BMW</h2>
+							<p>Projet de présentation d'un modèle conçu pour montrer les caractéristiques, son histoire et les performances de la BMW M4 CSL. Le site apporte un design soigné de qualité et des fonctionnalités intéressante et interactives.</p>
+							<a href="https://github.com/IKLSI/BMW" target="_BLANK">Voir plus</a>
+						</div>
 				</div>
 			</div>
 
@@ -432,10 +440,10 @@
 
 		<!-- Script permettant l'avancement de la barre de défilement selon la position sur la page -->
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>``
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
-		<script src="./JS/gsap.js"></script>>
+		<script src="./JS/gsap.js"></script>
 
 		<!-- Lors de l'appui du bouton Réinitialiser, les champs du formulaire sont vidés -->
 
@@ -444,7 +452,7 @@
 		<!-- Script permettant l'animation de fondu des éléments au fil du déroulement de la page -->
 
 		<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
-		<script src="./JS/fondu.js"></script>
 		<script src="./JS/element_etat.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
 	</body>
 </html>
