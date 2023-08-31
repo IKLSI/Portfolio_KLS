@@ -1,207 +1,186 @@
-/* Personnalisation éléments CSS pour rendre le site responsive */
+/* Style responsive pour les petits écrans */
 
 @media screen and (max-width:768px) {
-	body {
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
 
-	header {
-		flex-direction: row;
-		align-items: center;
-		width: 100%;
-		height: auto;
-		padding: 0;
-		text-align: center;
-		box-shadow: none;
-	}
-
-	h1 {
-		font-size: 24px;
-	}
-
-	#Front_Back h1,
-	#Competences h1,
-	#Projets h1,
-	#Parcours h1 {
-		margin-top: 20%;
-	}
-
-	/* Personnalisation Menu */
+	/* Personnalisation menu */
 
 	nav {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	nav ul {
+	nav ul li {
 		display: none;
 	}
 
-	nav ul.show {
-		display: flex;
+	nav ul {
+		margin-top: 1.5rem;
+	}
+
+	nav ul.show li {
+		display: block;
 		flex-direction: column;
 		align-items: flex-start;
 		align-items: center;
-		margin-left: -14%;
+		margin-bottom: 10px;
 	}
 
-	.icone_Menu {
-		margin-left: 2rem;
+	.Contenu {
+		flex-direction: column;
+		gap: 0;
 	}
 
 	.btn {
 		display: block;
-		margin-top: 10px;
 	}
 
-	/* Personnalisation des différentes sections de la page */
+	/* Page d'accueil */
 
-	.section {
-		height: auto;
-		margin-top: 5%;
-		padding: 20px;
+	.Titre1 {
+		margin-top: 0;
+		margin-left: 1rem;
+		font-size: 2rem;
+		color: white;
 	}
 
-	/* Personnalisation section accueil */
-
-	.volet_Accueil {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.Titre2 {
+		margin-top: 25rem;
+		margin-left: 1rem;
+		font-size: 2rem;
+		color: white;
 	}
 
-	.lettre {
-		letter-spacing: 10px;
-	}
-
-	.avatar {
-		width: 300px;
-		height: 300px;
-		margin: 0 auto;
-	}
-
-	.social {
-		align-items: center;
-		margin-top: 10px;
-	}
-
-	.social img {
-		width: 70px;
-		height: 70px;
-		margin-left: 30px;
-	}
-
-	.social .LinkedIn {
-		margin-left: 45px;
-	}
-
-	/* Personnalisation section personnel */
-
-	.about-me #Img_Code {
+	.Légende {
 		display: none;
 	}
 
-	.zone_Carte {
-		width: 18%;
-		overflow: scroll;
+	/* Section présentation */
+
+	#Presentation {
+		margin-bottom: 10rem;
 	}
 
-	.buttons_Presentation {
-		position: absolute;
-		top: 10px;
-		left: 0%;
+	.Presentation {
+		display: flex;
+		align-items: center;
+		margin-left: 2rem;
 	}
 
-	.buttons_Presentation button {
-		width: 90%;
-		margin: 5px;
-		font-size: 12px;
+	.Bloc {
+		margin-bottom: 1rem;
+		font-size: 1rem;
+		color: #2D2E32;
 	}
 
-	.buttons_Presentation button.active {
-		font-size: 16px;
+	.contenuPresentation {
+		padding: 0;
 	}
 
-	.card,
-	.card.langage {
-		margin-top: 100%;
+	.contenuPresentation span a img {
+		width: 20px;
 	}
 
-	/* Personnalisation section Front & Back */
-
-	.technologie {
-		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-		grid-gap: 10px;
-	}
-
-	.framework,
-	.framework2 {
-		height: 320px;
+	button {
 		margin-left: 0;
-		max-width: 300px;
-		font-size: 12px;
 	}
 
-	.framework img,
-	.framework2 img {
-		width: 100px;
+	.Photo {
+		max-width: 90%;
 	}
 
-	/* Augmentation taille de police des élements textuels de la section compétences */
+	/* Section personnel */
 
-	.content {
-		font-size: 15px;
+	.Personnel img {
+		display: none;
+		margin-left: 0;
 	}
 
-	.carte_Projet,
-	.competences,
-	.parcours {
-		margin: 10px;
-		padding: 20px;
+	.serieBouton {
+		left: 20%;
 	}
 
-	/* Personnalisation section projets */
-
-	.carte_Projet {
-		width: 70%;
-		height: 70%;
-		margin-left: 13%;
-		padding: 0;
-		font-size: 10px;
+	.serieBouton button {
+		margin-bottom: 2rem;
 	}
 
-	.carte_Projet img {
-		width: 50%;
-		height: 600px;
-		margin-left: -50%;
-	}
-
-	.contenu_Projet {
-		top: 0;
-		left: 65%;
-		width: 24%;
-		height: 100%;
+	.contenu-Carte div {
+		width: 100%;
+		margin-top: 150px;
+		margin-left: -1rem;
 		padding: 0;
 	}
 
-	.contenu_Projet h2 {
-		font-size: 16px;
+	.Carte {
+		margin-top: 3rem;
 	}
 
-	/* Personnalisation section parcours */
-
-	.parcours {
-		margin-top: 0;
-		font-size: 14px;
+	.card.centre {
+		margin-top: 150px;
 	}
 
-	.etudes3,
-	.etudes4 {
-		margin-left: 5%;
+	/* Section acquis */
+
+	#Acquis {
+		margin-top: 40rem;
 	}
+
+	.Zone {
+		display: block;
+	}
+
+	article {
+		margin-left: -2rem;
+	}
+
+	.icon {
+		margin-left: 3rem;
+	}
+
+	/* Section projets */
+
+	#Projets {
+		margin-top: 145rem;
+	}
+
+	.ensembleProjets {
+		width: 85%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.projetImg img {
+		width: 500px;
+	}
+
+	.projetContenu p {
+		width: 60%;
+		margin-left: 4rem;
+	}
+
+	.projetContenu div img {
+		width: 25px;
+	}
+
+	.Projets {
+		flex-direction: column;
+	}
+
+	.projetImg .Dashboard,
+	.projetImg .Medium {
+		padding: 0;
+	}
+
+	/* Section contact */
+
+	#Contact {
+		margin-top: 110rem;
+	}
+
+	#submitButton {
+		width: 200px;
+	}
+
+	/* Footer */
 
 	footer {
 		margin-top: 10%;

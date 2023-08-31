@@ -1,204 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* Personnalisation style */
 
-body {
+/* Sélecteur universel */
+
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Poppins',sans-serif;
-	color: white;
-	background-color: #212121;
-	transition: background-color 0.5s ease;
-	scroll-behavior: smooth;
 }
 
-header {
-	display: flex;
-	z-index: 999;
-	position: fixed;
-	top: 0;
-	left: 0;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	background-color: #212121;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+@font-face {
+	font-family: w;
+	src: url(../FONT/WanoQuin-ExtraBold.otf);
 }
 
-header img {
-	width: 73px;
-	height: 75px;
-	margin-top: 10px;
-	border-radius: 50%;
-}
-
-a {
-	text-decoration: none;
-}
-
-/* Animation de fondu en entrée */
-
-.fade-in {
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}
-
-.fade-in.visible {
-	opacity: 1;
-}
-
-.fade-in svg circle {
-	opacity: 1;
-}
-
-/* Personnalisation Menu partie supérieure */
-
-nav ul {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	list-style: none;
-}
-
-nav ul li {
-	margin: 0 2rem;
-}
-
-nav ul li a {
-	position: relative;
-	text-decoration: none;
-	font-size: 20px;
-	line-height: 1em;
-	letter-spacing: 2px;
-	color: #fff;
-}
-
-nav ul li a img {
-	width: 40px;
-	height: 40px;
-	filter: grayscale(100%);
-}
-
-nav ul li a::before {
-	content: attr(data-text);
-	color: transparent;
-	position: absolute;
-	width: 0;
-	border-bottom: 2px solid cyan;
-	overflow: hidden;
-	transition: 1s;
-}
-
-nav ul li a:hover::before {
-	width: 100%;
-}
-
-.icone_Menu {
-	margin-left: 20%;
-}
-
-/* Personnalisation Bouton Dark Light */
-
-label {
-	width: 70px;
-	height: 32px;
-	position: relative;
-	display: block;
-	border-radius: 200px;
-	box-shadow: inset 0 -5px 15px rgba(0,0,0,0.4), inset 0 5px 15px rgba(255,255,255,0.4);
-	cursor: pointer;
-	transition: 0.3s;
-	margin-top: -20%;
-	background: #fff;
-}
-
-label:after {
-	content: '';
-	width: 35px;
-	height: 30px;
-	left: 1px;
-	top: 1px;
-	position: absolute;
-	background: linear-gradient(180deg, #777, #3a3a3a);
-	border-radius: 30px;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-	transition: 0.3s;
-}
-
-li input {
-	width: 0;
-	height: 0;
-	visibility: hidden;
-}
-
-input:checked + label {
-	background: #242424;
-}
-
-input:checked + label:after {
-	left: calc(100% - 2px);
-	transform: translateX(-100%);
-	background: linear-gradient(180deg, #ffcc89, #d8860b);
-}
-
-/* Personnalisation page avec light mode */
-
-.light-mode {
-	color: #212121;
-}
-
-.light-mode svg text {
-	fill: #212121;
-}
-
-.light-mode #Accueil .social img,
-.light-footer .footer_Section img {
-	filter: drop-shadow(0 0 1rem black);
-}
-
-.light-header,
-.light-footer {
-	color: #212121;
+body {
+	overflow-x: hidden;
+	font-family: "Poppins",sans-serif;
+	color: #141414;
 	background-color: #fff;
 }
 
-.light-footer .footer_Section p {
-	color: #212121;
+body,
+html {
+	height: 100%;
 }
 
-.light-header a {
-	color: #212121;
-}
-
-.active-button #personnel,
-.active-button #langage,
-.active-button #centre {
-	color: #212121;
-}
-
-/* Désactiver bouton pour responsive */
-
-.btn {
-	display: none;
-}
-
-/* Personnalisation ensemble section et titre unique */
-
-.section {
+section {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	margin-top: 3%;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
 }
 
 /* Personnalisation de la barre d'avancement slon la position sur la page */
 
-progress {
-	position: fixed;
+.Barre {
 	z-index: 1;
-	bottom: 15px;
+	position: fixed;
+	bottom: 5px;
 	left: 0;
 	-webkit-appearance: none;
 	appearance: none;
@@ -208,101 +50,240 @@ progress {
 	background: transparent;
 }
 
-progress::-webkit-progress-bar {
+.Barre::-webkit-progress-bar {
 	background: inherit;
 }
 
-progress::-webkit-progress-value {
+.Barre::-webkit-progress-value {
 	background: #8f44fd;
 }
 
-/* Personnalisation de l'effet sur le background */
+/* Personnalisation header comportant le Menu */
 
-#particles-js {
-	z-index: -100;
+.Menu {
+	display: flex;
+	z-index: 1000;
 	position: fixed;
 	top: 0;
-	left: 0;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	padding: 1rem 3rem;
+	border-bottom: 1px solid #141414;
+	color: #141414;
+	background-color: #fff;
+}
+
+/* Personnalisation bande défilante */
+
+.Menu .Action {
+	position: absolute;
+	bottom: 0;
+	width: 50px;
+	height: 2px;
+	background: linear-gradient(90deg , transparent , #141414);
+	animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+	0% {
+		left: 0;
+		transform: translate(-100%);
+	}
+
+	100% {
+		left: 100%;
+		transform: translate(0%);
+	}
+}
+
+/* Personnalisation contenu du menu */
+
+.Logo {
+	text-transform: capitalize;
+	font-family: w;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.Contenu {
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	font-weight: 300;
+	list-style: none;
+	gap: 5rem;
+}
+
+nav ul li a {
+	position: relative;
+}
+
+nav ul li a::before {
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	border-bottom: 2px solid cyan;
+	overflow: hidden;
+	color: transparent;
+	transition: 1s;
+}
+
+nav ul li a:hover::before {
+	width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #141414;
+}
+
+.btn {
+	display: none;
+}
+
+/* Personnalisation section Accueil*/
+
+#Accueil {
+	display: flex;
+	grid-template-columns: 1fr 1fr;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
+	font-family: w;
+	background-color: #fff;
+	background-image: url('../ASSETS/Accueil.png');
+	background-position: center;
+	background-size: cover;
 }
 
-#Front_Back h1,
-#Competences h1,
-#Projets h1,
-#Parcours h1 {
-	margin-top: -15%;
-	text-align: center;
-	color: cyan;
-}
-
-/* Section accueil */
-
-.volet_Accueil {
+.ensembleTitres {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 10px;
+	margin-top: 10rem;
+}
+
+.Titre1 {
+	margin-left: 25rem;
+	font-size: 3rem;
+	color: white;
+}
+
+.Titre2 {
+	margin-bottom: 5rem;
+	margin-left: 14rem;
+	font-size: 3rem;
+	color: white;
+}
+
+.Légende {
+	margin-top: 26rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+}
+
+/* Style Présentation personnelle */
+
+.Presentation {
+	display: flex;
 	align-items: center;
-	margin-top: 8em;
+	margin-left: 10rem;
 }
 
-.contenu_Accueil {
-	text-align: center;
-	font-size: 20px;
+.contenuPresentation {
+	flex: 1;
+	padding: 20px;
 }
 
-.mot_Dynamique {
-	font-size: 26px;
-	font-weight: bold;
-	color: cyan;
+.contenuPresentation .Logo {
+	width: 10%;
 }
 
-.avatar {
-	width: 450px;
-	height: 450px;
-	margin-left: 25%;
-	border-radius: 50%;
-	overflow: hidden;
+.Bloc {
+	font-size: 4rem;
+	color: #2D2E32;
 }
 
-.avatar img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+a img {
+	width: 5%;
+	margin-top: 1rem;
 }
 
-/* Section social --> Réseau GitHub et LinkedIn */
-
-.social {
-	margin-top: 20px;
-	text-align: center;
+button {
+	width: 11rem;
+	margin-top: 1rem;
+	margin-left: 12rem;
+	padding: 1rem;
+	border-radius: 2rem;
+	font-weight: 600;
+	transition: all 300ms ease;
 }
 
-.social .LinkedIn {
-	margin-right: 40px;
-	margin-left: 80px;
+.btnTelechargement {
+	border: rgb(53,53,53) 0.1rem solid;
+	background: none;
 }
 
-.social a img {
-	width: 130px;
-	height: 130px;
+.btnTelechargement:hover {
+	border: rgb(255,255,255) 0.1rem solid;
+	color: white;
+	background: rgb(53,53,53);
+	cursor: pointer;
 }
 
-/* Section about-me */
+.Photo {
+	max-width: 60%;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	transition: border-radius 0.5s ease-in-out;
+}
 
-.about-me {
+/* Style Contenu personnel */
+
+.Personnel {
 	display: flex;
 	position: relative;
 	align-items: center;
+	margin-top: 5rem;
 }
 
-.about-me img {
-	width: 450px;
-	height: 450px;
-	margin-left: 10%;
-	border-radius: 50%;
-	overflow: hidden;
+.Personnel img {
+	width: 25%;
+	margin-left: 25rem;
 }
+
+/* Personnalisation boutons */
+
+.serieBouton {
+	position: absolute;
+	top: 10px;
+	left: 55%;
+}
+
+.serieBouton button {
+	width: 200px;
+	margin: 5px;
+	padding: 10px 20px;
+	border: none;
+	font-family: 'Poppins',sans-serif;
+	font-size: 14px;
+	color: #141414;
+	cursor: pointer;
+}
+
+.serieBouton button.active {
+	border-bottom: 2px solid cyan;
+	font-size: 16px;
+	transition: transform 0.4s;
+	transform: translateY(-20px);
+}
+
+/* Style cartes */
 
 .contenu-Carte {
 	flex: 1;
@@ -314,50 +295,21 @@ progress::-webkit-progress-value {
 	line-height: 1.5;
 }
 
+.contenu-Carte h3 {
+	font-size: .8rem;
+	font-weight: 600;
+}
+
 .contenu-Carte div {
+	width: 80%;
 	padding: 40px;
 	border-radius: 10px;
-	font-size: 13px;
 	font-weight: 300;
-	background-color: #333;
+	color: #767676;
 	transition: transform 0.4s;
 }
 
-.zone_Carte {
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	gap: 20px;
-}
-
-/* Personnalisation boutons */
-
-.buttons_Presentation {
-	position: absolute;
-	top: 10px;
-	left: 43%;
-}
-
-.buttons_Presentation button {
-	margin: 5px;
-	padding: 10px 20px;
-	border: none;
-	font-family: 'Poppins',sans-serif;
-	font-size: 16px;
-	color: #fff;
-	background-color: transparent;
-	cursor: pointer;
-}
-
-.buttons_Presentation button.active {
-	border-bottom: 2px solid cyan;
-	font-size: 20px;
-	transition: transform 0.4s;
-	transform: translateY(-20px);
-}
-
-/* Style spécifique aux cartes pour les rendre verticales */
-
-/* Première catégorie de cartes --> Personnel */
+/* Première catégorie de cartes --> Personnel puis Centres d'intêrets */
 
 .card {
 	display: flex;
@@ -374,269 +326,170 @@ progress::-webkit-progress-value {
 	border-radius: 0;
 }
 
-.card p {
-	font-size: 14px;
-}
-
-.card .Cerveau {
-	width: 120px;
-	height: 80px;
-	border-radius: 0;
-}
-
-/* Deuxième catégorie de cartes --> Langage */
-
-.card.langage {
-	margin: 0;
-	margin-top: 60px;
-	padding: 40px;
-}
-
-.card.langage p {
-	font-size: 14px;
-}
-
 .card.centre {
-	margin-top: 99px;
+	margin-top: 70px;
 }
 
-.card.langage img,
-.card.centre img {
-	width: 120px;
-	height: 80px;
-	margin-left: 5%;
-	border-radius: 0;
-}
-
-/* Section framework */
-
-.technologie {
-	display: flex;
-	align-items: center;
-}
-
-.framework,
-.framework2 {
-	height: 420px;
-	margin-top: 4%;
-	margin-bottom: 20px;
-	margin-left: 30%;
-	padding: 20px;
-	max-width: 300px;
-	border-radius: 10px;
-	text-align: center;
+.Niveau {
+	width: 30%;
+	height: 8px;
+	margin-top: 5px;
+	border-radius: 4px;
+	overflow: hidden;
 	background-color: #f0f0f0;
 }
 
-.framework2 {
-	margin-left: 5%;
+/* Personnalisation maîtrise langage */
+
+.Langage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 10rem;
 }
 
-.framework2 p {
-	margin-top: 10%;
+.Zone {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	gap: 2rem;
 }
 
-.framework img {
-	width: 150px;
-	margin-bottom: 20px;
+.Carte {
+	flex: 1;
+	padding: 1.5rem;
+	border: rgb(53,53,53) 0.1rem solid;
+	border-color: rgb(163,163,163);
+	border-radius: 2rem;
+	text-align: center;
+	background: white;
 }
 
-.framework:hover,
-.framework2:hover {
-	border: 3px solid yellow;
-	transform: translateY(-10px);
+.Intitule {
+	margin-bottom: 2rem;
+	font-size: 1.75rem;
+	font-weight: 600;
+	color: rgb(85,85,85);
 }
 
-.contenu_Carte {
-	width: 100%;
-	color: #333;
+.Zone {
+	display: flex;
 }
 
-.contenu_Carte h2 {
-	margin-top: 0;
-	margin-bottom: 10px;
+.Article {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: initial;
+	gap: 2.5rem;
 }
 
-/* Section projets */
-
-#Projets {
-	margin-top: -10%;
+article {
+	display: flex;
+	justify-content: flex-start;
+	width: 10rem;
+	gap: 0.5rem;
 }
 
-#Projets h1 {
-	margin-bottom: 7%;
+article .icon {
+	cursor: default;
 }
 
-.zone_Projet {
-	display: grid;
-	grid-gap: 20px;
+.icon {
+	height: 2rem;
+	cursor: pointer;
+}
+
+/* Style partie projets */
+
+#projets {
+	margin-top: 25rem;
+}
+
+.ensembleProjets {
+	padding-right: 15rem;
+	padding-left: 20rem;
+}
+
+.ensembleProjets .Projets {
+	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	margin-top: 5rem;
+	gap: 5rem;
 }
 
-.carte_Projet {
-	position: relative;
-	border-radius: 10px;
+.Article {
+	gap: 2rem;
+}
+
+.Etiquette {
+	display: flex;
+	align-items: center;
+	border-radius: 1.7rem;
 	overflow: hidden;
-	background-color: #212121;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
-.carte_Projet img {
-	width: 40%;
-	height: 400px;
+.projetImg {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.projetImg img {
+	width: 500px;
+	border-radius: 1.7rem;
 	object-fit: cover;
 }
 
-.carte_Projet:hover {
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.projetImg .Dashboard,
+.projetImg .Medium {
+	width: 500px;
+	padding: 1.2rem;
+	border-radius: 1.7rem;
+	object-fit: cover;
 }
 
-.contenu_Projet {
+.projetContenu {
 	display: flex;
-	position: absolute;
-	top: 0;
-	left: 50%;
+	flex: 1;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	width: 33.5%;
-	height: 100%;
-	padding: 20px;
-	color: white;
-}
-
-.contenu_Projet h2 {
-	margin-bottom: 10px;
-	font-size: 24px;
-}
-
-.contenu_Projet p {
-	margin-bottom: 20px;
 	text-align: center;
-	font-size: 14px;
 }
 
-.contenu_Projet a {
-	padding: 8px 16px;
-	border-radius: 5px;
-	text-decoration: none;
-	color: #fff;
-	background-color: #007bff;
-	transition: background-color 0.3s ease;
-}
-
-/* Section competences */
-
-.competences,
-#Parcours,
-.parcours-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.competences {
-	margin-top: 0;
-}
-
-.circle {
-	fill: #333;
-	stroke: orange;
-	stroke-width: 3px;
-}
-
-.content {
-	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-	font-size: 10px;
-	fill: white;
-	text-anchor: middle;
-	dominant-baseline: middle;
-}
-
-/* Section parcours */
-
-#Parcours h1 {
-	margin-top: 15%;
-	margin-bottom: 5%;
-}
-
-.parcours {
-	margin-top: 8%;
-}
-
-.fleche {
-	margin: 0 20px;
-	font-size: 40px;
-	color: purple;
-}
-
-.etudes {
-	margin-left: 6%;
-}
-
-.etudes2 {
-	margin-left: 8%;
-}
-
-.etudes3 {
-	margin-left: 15%;
-}
-
-.etudes4 {
-	margin-left: 18%;
-}
-
-/* Section Formulaire */
-
-#Commentaire {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-top: 16%;
-}
-
-/* Personnalisation champs de saisie et bouton du formulaire */
-
-input {
-	width: 300px;
-	height: 50px;
-	margin-top: 10px;
-	margin-top: 5%;
-	border: 1px solid #ccc;
-	border-radius: 10px;
+.projetContenu h4 {
 	text-align: center;
-	font-weight: bold;
 }
 
-#submitButton {
-	width: 300px;
-	height: 50px;
-	margin-top: 10px;
-	margin-top: 5%;
-	border: 1px solid cyan;
-	border-radius: 10px;
-	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-	font-weight: bold;
-	color: #fff;
+.projetContenu .TitreProjet {
+	font-family: w;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #141414;
 }
 
-#submitButton:hover {
-	color: #000;
-	background-color: cyan;
+.projetContenu p {
+	width: 60%;
+	margin-top: 1rem;
+	color: #767676;
 }
 
-/* Style pour le footer */
+#Contact {
+	margin-top: 32rem;
+}
+
+/* Personnalisation footer */
 
 footer {
-	margin-top: 8%;
+	margin-top: 4rem;
 	padding: 20px;
 	text-align: center;
-	color: #fff;
-	background-color: #212121;
+	color: #767676;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
 }
 
@@ -659,8 +512,19 @@ footer {
 }
 
 .footer_Section p {
-	margin-top: 35px;
 	font-size: 14px;
+}
+
+.footer_Section i {
+	margin-top: 1.2rem;
+	font-size: 1.2rem;
+	color: black;
+}
+
+.footer_Section span {
+	margin-left: 5px;
+	font-size: 1rem;
+	color: black;
 }
 
 .social-icons {
@@ -676,13 +540,13 @@ footer {
 }
 
 .social-icons img {
-	width: 60px;
-	height: 60px;
+	width: 30px;
+	height: 30px;
 }
 
 .footer_Section p,
 .social-icons a {
-	color: #fff;
+	color: #767676;
 }
 
 .footer_Section a:hover {

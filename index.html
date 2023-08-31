@@ -1,360 +1,312 @@
-<!-- Index Portfolio KLS -->
-<!-- Auteur: KLS -->
-
-<!-- Déclaration de la page -->
-
 <!DOCTYPE html>
 <html lang="FR">
 	<head>
-		<title>Portfolio</title>
-
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link href="./IMAGES/Profil.jpg" rel="icon" type="image/x-icon">
+		<title>Kyliann • Développeur</title>
+		<link href="https://png.pngtree.com/png-clipart/20230411/ourmid/pngtree-modern-macbook-screen-frame-transparent-mockup-png-image_6699278.png" rel="icon" type="image/x-icon">
 
 		<link rel="stylesheet" href="./CSS/style.css">
-		<link rel="stylesheet" href="./CSS/effet.css">
-		<link rel="stylesheet" href="./CSS/responsive.css">
 		<link rel="stylesheet" href="./CSS/formulaire.css">
+		<link rel="stylesheet" href="./CSS/responsive.css">
 
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	</head>
-
-	<header>
-		<nav>
-			<ul>
-				<img src="./IMAGES/Avatar.png" alt="Avatar de profil">
-				<li>
-					<a href="#Personnel" data-text="About">About</a>
-				</li>
-				<li>
-					<a href="#Competences" data-text="Compétences">Compétences</a>
-				</li>
-				<li>
-					<a href="#Projets" data-text="Projets">Projets</a>
-				</li>
-				<li>
-					<a href="#Parcours" data-text="Parcours">Parcours</a>
-				</li>
-				<li class="icone_Menu">
-					<a href="#Accueil">
-						<img src="https://www.icone-png.com/png/54/53524.png" alt="Contact">
-					</a>
-				</li>
-				<li>
-					<a href="#Commentaire">
-						<img src="https://www.freeiconspng.com/thumbs/contact-icon-png/contact-icon-17.png" alt="Contact">
-					</a>
-				</li>
-				<li>
-					<input type="checkbox" id="boutonMode">
-					<label for="boutonMode"></label>
-				</li>
-			</ul>
-			<div class="btn">
-				<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
-					<path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
-				</svg>
-			</div>
-		</nav>
-	</header>
-
-	<script src="./JS/menu.js"></script>
-
 	<body>
-		<progress max="100" value="0"></progress>
-		<div id="fullpage">
-
-			<div id="particles-js"></div>
-
-			<!-- Section accueil -->
-
-			<div class="section" id="Accueil">
-				<div class="volet_Accueil">
-					<div class="contenu_Accueil">
-						<span class="lettre">L</span>
-						<span class="lettre">E</span>
-						<span class="lettre">V</span>
-						<span class="lettre">E</span>
-						<span class="lettre">S</span>
-						<span class="lettre">Q</span>
-						<span class="lettre">U</span>
-						<span class="lettre">E&nbsp;</span>
-						<span class="lettre">K</span>
-						<span class="lettre">Y</span>
-						<span class="lettre">L</span>
-						<span class="lettre">I</span>
-						<span class="lettre">A</span>
-						<span class="lettre">N</span>
-						<span class="lettre">N</span>
-
-						<p>2003</p>
-						<p>Bienvenue sur mon Portfolio</p>
-
-						<div>
-							<span>Je suis&nbsp;</span>
-							<span class="mot_Dynamique">Etudiant</span>
-						</div>
-
-						<!-- Déclaration du script permettant le changement de mot de façon écrite sur la page d'accueil -->
-						
-						<script src="./JS/animation.js"></script>
-					</div>
-
-					<div class="avatar">
-						<img src="https://github.com/abhisheknaiidu/abhisheknaiidu/raw/master/code.gif?raw=true" alt="Photo accueil">
-					</div>
-				</div>
-
-				<!-- Section social -->
-
-				<div class="social">
-					<a href="https://github.com/IKLSI" target="_BLANK">
-						<img src="./IMAGES/GitHub.png" alt="GitHub">
-					</a>
-					<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK" class="LinkedIn">
-						<img src="./IMAGES/Linkedin.png" alt="LinkedIn">
-					</a>
-				</div>
-			</div>
-
-			<!-- Script pour la section about-me permettant l'animation des cartes selon la catégorie choisie ainsi que l'animation des boutons -->
-
-			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-			<script src="./JS/bouton_carte.js"></script>
-
-			<script src="./JS/bouton_actif.js"></script>
-
-			<!-- Section A propos de moi -->
-
-			<div class="section" id="Personnel">
-				<div class="about-me">
-					<img src="https://media.istockphoto.com/id/1358013032/fr/photo/concept-de-d%C3%A9veloppement-web.jpg?s=170667a&w=0&k=20&c=ab5s8KN2TMJyaS8KWT4dDH8VRlBLioJEMyhECRCSa_w=" alt="Logo développement" id="Img_Code">
-
-					<!-- Bouton de catégorie | Par défaut Personnel est actif -->
-
-					<div class="buttons_Presentation">
-						<button id="personnel" class="active">Personnel</button>
-						<button id="langage">Langage</button>
-						<button id="centre">Centres d'intérêts</button>
-					</div>
-
-					<div class="contenu-Carte zone_Carte">
-
-						<!-- Cartes personnel -->
-
-						<div class="card personnel">
-							<img src="https://static.vecteezy.com/system/resources/previews/001/200/587/non_2x/school-png.png" alt="Ecole">
-							<p>Étudiant en développement informatique et étant passionné par le développement applicatif ainsi que la mise en place de services web</p>
-						</div>
-
-						<div class="card personnel">
-							<img src="https://cdn-icons-png.flaticon.com/512/31/31089.png" alt="Balise">
-							<p>Plûtot developpement web et orienté front-end je me laisse également séduire par le fullstack</p>
-						</div>
-
-						<div class="card personnel">
-							<img src="https://www.pngmart.com/files/21/Brain-PNG-Isolated-Picture.png" alt="Cerveau" class="Cerveau">
-							<p>Rigoureux, acharné, motivé, ponctuel et curieux je m'efforce de toujours donner le meilleur de moi-même dans les projets que j'entreprends</p>
-						</div>
-
-						<!-- Cartes langages -->
-
-						<div class="card langage">
-							<img src="./IMAGES/Web.png" alt="Web">
-							<p>HTML pour la structure, CSS pour l'esthétique, JavaScript pour l'interactivité, animations et enfin PHP pour la logique côté serveur</p>
-						</div>
-
-						<div class="card langage">
-							<img src="https://cdn-icons-png.flaticon.com/512/311/311357.png" alt="Java">
-							<p>En matière de développement applicatif l'utilisation de Java est de mise néanmoins je possède des connaissances en C et en Python</p>
-						</div>
-
-						<div class="card langage">
-							<img src="https://download.logo.wine/logo/Oracle_SQL_Developer/Oracle_SQL_Developer-Logo.wine.png" alt="SQL">
-							<p>Base de données<br>
-								PostgreSQL (études)<br>
-								MySQL (projets locaux/réseau)<br>
-								Firebase (projets personnels)</p>
-						</div>
-
-						<!-- Cartes centres d'intérêts -->
-
-						<div class="card centre">
-							<img src="https://cdn-icons-png.flaticon.com/512/2418/2418779.png" alt="Sport automobile">
-							<p>Passionné d'automobile, je suis fasciné par la technologie et l'ingénierie qui se cachent derrière les modèles de sport qui nous entourent. J'aime suivre les compétitions de sports automobiles et je m'intéresse également à la mécanique automobile</p>
-						</div>
-
-						<div class="card centre">
-							<img src="https://cdn-icons-png.flaticon.com/512/4488/4488216.png" alt="Batterie musique">
-							<p>Ayant un profond attrait depuis l'enfance pour la musique je joue de la batterie depuis 9 ans dans un groupe. La musique est également une source d'inspiration et de motivation dans mon travail quotidien</p>
-						</div>
-
-						<div class="card centre">
-							<img src="https://cdn-icons-png.flaticon.com/512/2460/2460229.png" alt="Informatique">
-							<p>A l'affût des dernières avancées technologiques et de nouvelles sources de connaissances, je cherche constamment à m'enrichir dans l'informatique et plus particulièrement le développement</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-			<!-- Section Front & Back -->
-
-			<div class="section" id="Front_Back">
-				<h1>Réalisation FrontEnd & BackEnd</h1>
-				<div class="technologie">
-					<div class="framework">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React JS">
-						<div class="contenu_Carte">
-							<h2>React JS</h2>
-							<p>Bibliothèque JavaScript me permettant de réaliser des applications Web responsive grâce à l'utilisation et la maniabilité des composants en réponse à des exigences de performance et de maintenabilité (Dashboard, To Do List ...)</p>
-						</div>
-					</div>
-					<div class="framework2">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/langfr-220px-Node.js_logo.svg.png" alt="Node JS">
-						<div class="contenu_Carte">
-							<h2>Node JS</h2>
-							<p>Environnement d'exécution JavaScript me permettant de créer des applications Web et des outils côté serveur (Bot Discord, Collecte de données ...)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Section compétences -->
-
-			<div class="section" id="Competences">
-				<h1>Mes compétences</h1>
-				<div class="competences">
-
-					<!-- SVG permettant de faire un cercle avec du texte autour -->
-
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
-						<circle class="circle" cx="19%" cy="50%" r="8%" />
-						<text class="content">
-							<textPath xlink:href="#circle1" startOffset="30%">Développement</textPath>
-						</text>
-
-						<circle class="circle" cx="34%" cy="50%" r="8%" />
-						<text class="content">
-							<textPath xlink:href="#circle2" startOffset="30%">Réseau</textPath>
-						</text>
-
-						<circle class="circle" cx="49%" cy="50%" r="8%" />
-						<text class="content">
-							<textPath xlink:href="#circle3" startOffset="40%">Résolution de problèmes</textPath>
-						</text>
-
-						<circle class="circle" cx="64%" cy="50%" r="8%" />
-						<text class="content">
-							<textPath xlink:href="#circle4" startOffset="30%">Gestion de projets</textPath>
-						</text>
-
-						<circle class="circle" cx="79%" cy="50%" r="8%" />
-						<text class="content">
-							<textPath xlink:href="#circle5" startOffset="30%">Travail d'équipe</textPath>
-						</text>
-
-						<path id="circle1" d="M190,40 A60,60 0 0,1 190,160" style="fill:none" />
-						<path id="circle2" d="M340,40 A60,60 0 0,1 340,160" style="fill:none" />
-						<path id="circle3" d="M490,40 A60,60 0 0,1 490,160" style="fill:none" />
-						<path id="circle4" d="M640,40 A60,60 0 0,1 640,160" style="fill:none" />
-						<path id="circle5" d="M790,40 A60,60 0 0,1 790,160" style="fill:none" />
+		<header>
+			<nav class="Menu">
+				<span class="Action"></span>
+				<div class="Logo">KLS</div>
+				<ul class="Contenu">
+					<li>
+						<a href="#Accueil" data-text="Accueil">Accueil</a>
+					</li>
+					<li>
+						<a href="#Presentation" data-text="About">À propos</a>
+					</li>
+					<li>
+						<a href="#Projets" data-text="Projets">Projets</a>
+					</li>
+					<li>
+						<a href="#Contact" data-text="Contact">Contact</a>
+					</li>
+				</ul>
+				<div class="btn">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
 					</svg>
 				</div>
+			</nav>
+		</header>
+
+		<!-- Script permettant sur un petit écran de faire apparaître le menu lors du clic sur le logo -->
+
+		<script src="./JS/Menu.js"></script>
+
+		<!-- Barre de progression sur la page grâce à GSAP -->
+
+		<progress max="100" value="0" class="Barre"></progress>
+
+		<!-- Page de bienvenue -->
+
+		<div id="Accueil">
+			<div class="ensembleTitres">
+				<h1 class="Titre1">Bienvenue sur</h1>
+				<h1 class="Titre2">mon portolio</h1>
 			</div>
+			<h1 class="Légende">"La passion du code se mêle à la créativité pour donner vie à des solutions uniques"</h1>
+		</div>
 
-			<!-- Section projets -->
+		<!-- Section de présentation -->
 
-			<div class="section" id="Projets">
-				<h1>Projets réalisés</h1>
-				<div class="zone_Projet">
-					<div class="carte_Projet">
-						<img src="https://iklsi.github.io/RC/src/IMAGES/Mojave.jpg" alt="Photo de profil">
-						<div class="contenu_Projet">
-							<h2>RC</h2>
-							<p>Projet WEB de présentation de modèles de voitures avec interface utilisateur et plateforme d'achat non active.</p>
-							<a href="https://github.com/IKLSI/RC" target="_BLANK">Voir plus</a>
-						</div>
-					</div>
-
-					<div class="carte_Projet">
-						<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/db239c70550991.5ba7922b61759.png" alt="Photo de profil" class="Dash">
-						<div class="contenu_Projet">
-							<h2>Dashboard</h2>
-							<p>Projet WEB permettant de visualiser différentes données provenant de mon GitHub personnel réalisé en React JS et entièrement responsive.</p>
-							<a href="https://github.com/IKLSI/Dashboard" target="_BLANK">Voir plus</a>
-						</div>
-					</div>
-
-					<div class="carte_Projet">
-						<img src="https://us.123rf.com/450wm/dykc/dykc1903/dykc190300080/119345488-élément-de-modèle-de-conception-d-icône-de-logo-lettre-g-3d-illustration-vectorielle.jpg?ver=6" alt="Photo de profil" class="Graphe">
-						<div class="contenu_Projet">
-							<h2>Graphe</h2>
-							<p>Jeu de parcours sous forme d'un graphe avec différentes fonctionnalitées imposées en JAVA sous interface Swing</p>
-							<a href="https://github.com/IKLSI/graphe-java" target="_BLANK">Voir plus</a>
-						</div>
-					</div>
-
-					<div class="carte_Projet">
-						<img src="https://imgs.search.brave.com/Gx28c-HRq-m23g3Xe9Jv4gbgwtuVk9gi5rsi-_e3Cz0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy8yMDIz/LWJtdy1tNC1jc2wt/ZHJpdmUtMTAzLTE2/NjQxNTg4NDkuanBn/P3Jlc2l6ZT05ODA6/Kg" alt="Photo de profil" class="Bot">
-						<div class="contenu_Projet">
-							<h2>BMW</h2>
-							<p>Projet de présentation d'un modèle conçu pour montrer les caractéristiques, son histoire et les performances de la BMW M4 CSL. Le site apporte un design soigné de qualité et des fonctionnalités intéressante et interactives.</p>
-							<a href="https://github.com/IKLSI/BMW" target="_BLANK">Voir plus</a>
-						</div>
+		<section id="Presentation">
+			<div class="Presentation">
+				<div class="contenuPresentation">
+					<h1 class="Bloc">
+						Front-end<br>
+						Développeur
+						<img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="Image de Bienvenue" class="Logo">
+					</h1>
+					<p>
+						Salut, je suis Kyliann Levesque. Un passionné de développement<br>
+						Web français encore en étude.
+					</p>
+					<span>
+						<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK">
+							<img src="https://imgs.search.brave.com/402cj5IFr-QEar1-fRbnkfxKO3p8-FHzADUZAPQMdrI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvNjEvNjExMDku/cG5n" alt="Linkedin" title="Linkedin">
+						</a>
+						<a href="https://github.com/IKLSI" target="_BLANK">
+							<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github" title="Github">
+						</a>
+					</span><br>
+					<button class="btnTelechargement">Télécharger mon CV</button>
 				</div>
-			</div>
-
-			<!-- Section parcours -->
-
-			<div class="section" id="Parcours">
-				<h1>Mon parcours d'études</h1>
 				<div>
-					<div class="parcours">
-						<span class="annee">2023</span>
-						<span class="fleche">&#8594;</span>
-						<span class="annee">2024</span><br>
-						<span class="etudes">BUT 2 Informatique</span>
+					<img class="Photo" src="./ASSETS/Profil.png" alt="Photo personnel">
+				</div>
+			</div>
+		</section>
+
+		<!-- Script permettant l'affichage du bouton actif ainsi que son contenu  -->
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="./JS/Carte.js"></script>
+		<script src="./JS/Actif.js"></script>
+
+		<!-- Section Personnel -->
+
+		<section>
+			<p>Découvre mon</p>
+			<h1>Profil</h1>
+			<div class="Personnel">
+				<img src="https://stefantopalovicdev.vercel.app/static/media/about-img.62b47e7f183d4b4e9feb.webp" alt="Environnement de travail">
+				<div class="serieBouton">
+					<button id="personnel" class="active">Personnel</button>
+					<button id="centre">Centres d'intérêts</button>
+				</div>
+				<div class="contenu-Carte zone_Carte">
+					<div class="card personnel">
+						<h3>
+							Étudiant en développement informatique avec plus de deux ans d'expériences, je suis passionné par la réalisation et le déploiement de services web.<br>
+							Spécialisé dans le développement web front-end je suis également à l'aise avec le back-end et la gestion de bases de données.<br>
+							Je suis rigoureux, acharné, motivé, ponctuel et curieux, je m'efforce de toujours donner le meilleur de moi-même dans les projets que j'entreprends.<br>
+						</h3>
 					</div>
-					<div class="parcours">
-						<span class="annee">2022</span>
-						<span class="fleche">&#8594;</span>
-						<span class="annee">2023</span><br>
-						<span class="etudes2">BUT 1 Informatique</span>
-					</div>
-					<div class="parcours">
-						<span class="annee">2021</span>
-						<span class="fleche">&#8594;</span>
-						<span class="annee">2022</span><br>
-						<span class="etudes3">Licence MIPSI</span>
-					</div>
-					<div class="parcours">
-						<span class="annee">Août</span>
-						<span class="fleche">&#8594;</span>
-						<span class="annee">2021</span><br>
-						<span class="etudes3">Permis B AAC</span>
-					</div>
-					<div class="parcours">
-						<span class="annee">2018</span>
-						<span class="fleche">&#8594;</span>
-						<span class="annee">2021</span><br>
-						<span class="etudes4">
-							Bac général<br>
-							&nbsp;&nbsp;Mathématiques, PC<br>
-							&nbsp;&nbsp;Maths expertes / SI
-						</span>
+					<div class="card centre">
+						<h3>
+							Passionné d'automobile, je suis fasciné par la technologie et l'ingénierie qui se cachent derrière les modèles de sport qui nous entourent. J'aime suivre les compétitions de sports automobiles et je m'intéresse également à la mécanique automobile.<br>
+							Ayant un profond attrait depuis l'enfance pour la musique, je joue de la batterie depuis l'âge de 9 ans dans un groupe. La musique est également une source d'inspiration et de motivation dans mon travail quotidien.<br>
+						</h3>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<!-- Section contact -->
+		<!-- Section Acquis -->
 
+		<section id="Acquis">
+			<p>Découvre mes</p>
+			<h1>Acquis</h1>
+			<div class="Langage">
+				<div class="Zone">
+					<div class="Carte">
+						<h2 class="Intitule">Développement</h2>
+						<div class="Article">
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>HTML</h3>
+									<p>Avancé</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>CSS</h3>
+									<p>Avancé</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>Javascript</h3>
+									<p>Intermédiaire</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>PHP</h3>
+									<p>Basique</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>Java</h3>
+									<p>Intermédiaire</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>C & Python</h3>
+									<p>Basique</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="Carte">
+						<h2 class="Intitule">Outils</h2>
+						<div class="Article">
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>React JS</h3>
+									<p>Basique</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>Node JS</h3>
+									<p>Basique</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>Git</h3>
+									<p>Intermédiaire</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>Docker</h3>
+									<p>Basique</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>PostgreSQL</h3>
+									<p>Intermédiaire</p>
+								</div>
+							</article>
+							<article>
+								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
+								<div>
+									<h3>Firebase</h3>
+									<p>Intermédiaire</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="Projets"></div>
+
+		<!-- Section Projets -->
+
+		<section id="projets">
+			<p>Découvre certains de mes</p>
+			<h1>Projets</h1>
+			<div class="ensembleProjets">
+				<div class="Etiquette Projets">
+					<div class="projetImg">
+						<img src="https://www.bmw.lu/content/dam/bmw/common/all-models/m-series/m4-coupe/2022/technical_data/bmw-4-series-coupe-m-automobiles-technical-data-sp-desktop.jpg" alt="BMW">
+					</div>
+					<div class="projetContenu">
+						<p class="TitreProjet">BMW</p>
+						<p>Projet vitrine de présentation d'un produit pour une marque de voiture. Le site comporte un design soigné, épuré et entièrement responsive captivant l'essence même de ce produit. Réalisé en HTML pour la structure, CSS pour l'esthétique et Javascript pour l'interactivité.</p>
+						<div>
+							<a href="https://github.com/IKLSI/BMW" target="_BLANK">
+								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
+							</a>
+							<a href="https://iklsi.github.io/BMW/" target="_BLANK">
+								<img src="https://imgs.search.brave.com/AaQd-fflt1tRebxmOMlGPZgP5QVeZ8DEkyx6_Xni45k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMjk4NS8yOTg1/MTY4LnBuZw" alt="Lien de renvoi">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Etiquette Projets">
+					<div class="projetImg">
+						<img src="./ASSETS/Dashboard.png" alt="Dashboard" class="Dashboard">
+					</div>
+					<div class="projetContenu">
+						<p class="TitreProjet">Dashboard</p>
+						<p>Réalisation d'un tableau de bord très utilisé dans le domaine professionnel fournissant un aperçu complet et interactif des données extraites de mon référentiel GitHub personnel. Réalisé en React JS pour l'interface dynamique et CSS pour l'esthétique.</p>
+						<div>
+							<a href="https://github.com/IKLSI/Dashboard" target="_BLANK">
+								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Etiquette Projets">
+					<div class="projetImg">
+						<img src="https://m.traxxas.com/sites/default/files/images/89086-4-RED-Dirt-WILD-8577_m.jpg" alt="RC">
+					</div>
+					<div class="projetContenu">
+						<p class="TitreProjet">RC</p>
+						<p>Projet de présentation qui met en avant différents modèles de voitures radiocommandée avec la possibilité de laisser des avis ou encore de consulter une boutique éphémère avec plateforme de paiement non-active. Réalisé en HTML, CSS, Javascript et Firebase pour la gestion de la base de données.</p>
+						<div>
+							<a href="https://github.com/IKLSI/RC" target="_BLANK">
+								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
+							</a>
+							<a href="https://iklsi.github.io/RC/" target="_BLANK">
+								<img src="https://imgs.search.brave.com/AaQd-fflt1tRebxmOMlGPZgP5QVeZ8DEkyx6_Xni45k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMjk4NS8yOTg1/MTY4LnBuZw" alt="Lien de renvoi">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Etiquette Projets">
+					<div class="projetImg">
+						<img src="https://miro.medium.com/v2/resize:fit:640/0*YwvRwgBUuk_xiC3x.gif" alt="Article" class="Medium">
+					</div>
+					<div class="projetContenu">
+						<p class="TitreProjet">Articles</p>
+						<p>Rédaction et publication d'articles traitant de divers sujets liés au développement et à l'informatique en général. Ces articles sont publiés sur la plateforme Medium.</p>
+						<div>
+							<a href="https://medium.com/@kyliannlvs2" target="_BLANK">
+								<img src="https://imgs.search.brave.com/h0GM0qqSi3WPc0cfoMVK8M9zMBkzLBEGlVpszM2X6dA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvc29jaWFsLW1l/ZGlhLWNpcmNsZS03/LzUxMi9DaXJjbGVk/X01lZGl1bV9zdmc1/LTUxMi5wbmc" alt="Medium">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section Contact -->
+
+		<section id="Contact">
+			<p>N'hésitez pas à me</p>
+			<h1>Contacter</h1>
 			<div class="section" id="Commentaire">
 				<div class="background">
 					<div class="container">
@@ -397,62 +349,48 @@
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<footer>
-				<div class="contenu_Footer">
-					<div class="footer_Section">
-						<h3>Réseaux sociaux</h3>
-						<ul class="social-icons">
-						<li><a href="https://github.com/IKLSI" target="_BLANK"><img src="./IMAGES/GitHub.png" alt="GitHub"></a></li>
-						<li><a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK"><img src="./IMAGES/Linkedin.png" alt="LinkedIn"></a></li>
-						</ul>
-					</div>
-					<div class="footer_Section">
-						<h3>Mentions légales</h3>
-						<p>Tous droits réservés &copy; 2023</p>
-					</div>
+		<!-- Footer de la page -->
+
+		<footer>
+			<div class="contenu_Footer">
+				<div class="footer_Section">
+					<h3>Réseaux sociaux</h3>
+					<ul class="social-icons">
+						<li>
+							<a href="https://github.com/IKLSI" target="_BLANK">
+								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="GitHub">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK">
+								<img src="https://imgs.search.brave.com/402cj5IFr-QEar1-fRbnkfxKO3p8-FHzADUZAPQMdrI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvNjEvNjExMDku/cG5n" alt="LinkedIn">
+							</a>
+						</li>
+					</ul>
 				</div>
-			</footer>
-		</div>
+				<div class="footer_Section">
+					<h3>Localisation</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>
+						<span>France</span>
+					</p>
+				</div>
+			</div>
+		</footer>
 
-		<!-- Script liaison firebase -->
+		<!-- Déclaration des scripts -->
 
+		<!-- Firebase | Base de données formulaire -->
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-		<script type="module" src="./JS/firebase.js"></script>
+		<script type="module" src="./JS/Firebase.js"></script>
+		<script src="./JS/Reset.js"></script>
 
-		<!-- Script permettant les animations sur le background -->
-
-		<script src="./JS/background.js"></script>
-
-		<!-- Script permettant le changement de mode sombre à lumière et inversement -->
-
-		<script src="./JS/bouton_mode.js"></script>
-
-		<!-- Script fullpage -> Défilement en un scroll -->
-
-		<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js'></script>
-		<script id="rendered-js">
-			new fullpage('#fullpage', {
-			autoScrolling: true,
-			});
-		</script> -->
-
-		<!-- Script permettant l'avancement de la barre de défilement selon la position sur la page -->
-
+		<!-- Barre de progression -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
-		<script src="./JS/gsap.js"></script>
-
-		<!-- Lors de l'appui du bouton Réinitialiser, les champs du formulaire sont vidés -->
-
-		<script src="./JS/reset_formulaire.js"></script>
-
-		<!-- Script permettant l'animation de fondu des éléments au fil du déroulement de la page -->
-
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
-		<script src="./JS/element_etat.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+		<script src="./JS/Gsap.js"></script>
 	</body>
 </html>

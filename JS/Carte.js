@@ -10,12 +10,6 @@ $(document).ready(function() {
 		$(".card.personnel").show();
 	});
 
-	// Lorsque le bouton "Langage" est cliqué afficher les cartes correspondant à la zone "Langage"
-	$("#langage").click(function() {
-		$(".card").hide();
-		$(".card.langage").show();
-	});
-
 	// Lorsque le bouton "Centre" est cliqué afficher les cartes correspondant à la zone "Centre d'intérêt"
 	$("#centre").click(function() {
 		$(".card").hide();

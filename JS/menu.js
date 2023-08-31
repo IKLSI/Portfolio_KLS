@@ -1,6 +1,6 @@
 // Permet d'afficher le menu grâce à un bouton pour le responsive
 
-const menuToggle = document.getElementsByClassName('btn')[0];
+const menuToggle = document.querySelector('.btn');
 const menuList = document.querySelector('nav ul');
 
 menuToggle.addEventListener('click', () => {
