@@ -144,6 +144,12 @@ input {
 	background: #ea1d6f;
 }
 
+.app-contact {
+	margin-top: auto;
+	font-size: 12px;
+	color: #888;
+}
+
 .app-form-group {
 	margin-bottom: 15px;
 }

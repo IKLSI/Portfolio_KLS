@@ -190,3 +190,42 @@
 		margin: 0 5px;
 	}
 }
+
+/* Media screen pc portbale */
+
+@media screen and (min-width:769px) and (max-width:1500px) {
+	.Légende {
+		margin-top: 22rem;
+	}
+
+	.ensembleTitres {
+		margin-top: 8rem;
+	}
+
+	.Titre2 {
+		margin-left: 7rem;
+	}
+
+	.serieBouton {
+		left: 55%;
+	}
+
+	.serieBouton button {
+		margin: 15px;
+	}
+
+	.Personnel img {
+		margin-left: 17rem;
+	}
+
+	.projetImg img,
+	.projetImg .Dashboard,
+	.projetImg .Medium {
+		width: 400px;
+	}
+
+	#projets,
+	#Contact {
+		margin-top: 45rem;
+	}
+}

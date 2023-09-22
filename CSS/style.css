@@ -225,18 +225,6 @@ button {
 	transition: all 300ms ease;
 }
 
-.btnTelechargement {
-	border: rgb(53,53,53) 0.1rem solid;
-	background: none;
-}
-
-.btnTelechargement:hover {
-	border: rgb(255,255,255) 0.1rem solid;
-	color: white;
-	background: rgb(53,53,53);
-	cursor: pointer;
-}
-
 .Photo {
 	max-width: 60%;
 	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -274,6 +262,8 @@ button {
 	font-size: 14px;
 	color: #141414;
 	cursor: pointer;
+	background: transparent;
+	box-shadow: 0 2px 5px 0 rgba(0, 255, 255, 0.4);
 }
 
 .serieBouton button.active {
@@ -281,6 +271,7 @@ button {
 	font-size: 16px;
 	transition: transform 0.4s;
 	transform: translateY(-20px);
+	box-shadow: none;
 }
 
 /* Style cartes */
@@ -305,7 +296,7 @@ button {
 	padding: 40px;
 	border-radius: 10px;
 	font-weight: 300;
-	color: #767676;
+	color: #141414;
 	transition: transform 0.4s;
 }
 
