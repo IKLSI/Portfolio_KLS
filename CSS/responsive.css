@@ -90,9 +90,14 @@
 
 	/* Section personnel */
 
+	.Personnel {
+		display: grid;
+	}
+
 	.Personnel img {
-		display: none;
-		margin-left: 0;
+		margin-left: 17%;
+		margin-top: 12rem;
+		width: 60%;
 	}
 
 	.serieBouton {
@@ -105,7 +110,7 @@
 
 	.contenu-Carte div {
 		width: 100%;
-		margin-top: 150px;
+		margin-top: 50px;
 		margin-left: -1rem;
 		padding: 0;
 	}
@@ -115,7 +120,7 @@
 	}
 
 	.card.centre {
-		margin-top: 150px;
+		margin-top: 50px;
 	}
 
 	/* Section acquis */
@@ -139,7 +144,7 @@
 	/* Section projets */
 
 	#Projets {
-		margin-top: 145rem;
+		margin-top: 115rem;
 	}
 
 	.ensembleProjets {
@@ -149,7 +154,13 @@
 	}
 
 	.projetImg img {
-		width: 500px;
+		width: 400px;
+	}
+
+	.projetImg img,
+	.projetImg .Dashboard,
+	.projetImg .Medium {
+		width: 350px;
 	}
 
 	.projetContenu p {
@@ -173,7 +184,11 @@
 	/* Section contact */
 
 	#Contact {
-		margin-top: 110rem;
+		margin-top: 90rem;
+	}
+
+	#Contact p {
+		text-align: center;
 	}
 
 	#submitButton {
