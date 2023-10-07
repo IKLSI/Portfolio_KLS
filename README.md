@@ -1,6 +1,6 @@
-# Mon Portfolio
+# Portfolio - Développeur Junior
 
-![Aperçu du site](https://miro.medium.com/v2/resize:fit:640/0*YwvRwgBUuk_xiC3x.gif)
+![Aperçu du site](./ASSETS/Apercu.png)
 
 ## Description
 
@@ -12,7 +12,8 @@ Le site dispose d'une barre de navigation simple en haut, qui permet aux utilisa
 
 ## Formulaire de contact
 
-Le site dispose d'un formulaire de contact relié à Firebase, qui permet aux utilisateurs de laisser un message avec leur adresse mail afin que je puisse en prendre connaissance.
+Le site dispose d'un formulaire de contact relié à Firebase, qui permet aux utilisateurs de laisser un message avec leur adresse mail afin que je puisse en prendre connaissance. Aucune donnée n'est utilisée à une quelconque fin.
+Sur ce formulaire est également présent mon adresse mail universitaire pour me contacter directement.
 
 ## Auteur
 
