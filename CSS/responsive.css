@@ -34,26 +34,6 @@
 		display: block;
 	}
 
-	/* Page d'accueil */
-
-	.Titre1 {
-		margin-top: 0;
-		margin-left: 1rem;
-		font-size: 2rem;
-		color: white;
-	}
-
-	.Titre2 {
-		margin-top: 25rem;
-		margin-left: 1rem;
-		font-size: 2rem;
-		color: white;
-	}
-
-	.Légende {
-		display: none;
-	}
-
 	/* Section présentation */
 
 	#Presentation {
@@ -86,6 +66,12 @@
 
 	.Photo {
 		max-width: 90%;
+	}
+
+	.Main {
+		margin-top: 10px;
+		width: 40px;
+		height: 40px;
 	}
 
 	/* Section personnel */
