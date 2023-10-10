@@ -1,8 +1,6 @@
 /* Style formulaire */
 
-#Commentaire {
-	margin-top: 3%;
-}
+#Commentaire { margin-top: 3%; }
 
 /* Personnalisation champs de saisie et bouton du formulaire */
 
@@ -68,9 +66,7 @@ input {
 	border-top-right-radius: 15px;
 }
 
-.screen-header-left {
-	margin-right: auto;
-}
+.screen-header-left { margin-right: auto; }
 
 .screen-header-button {
 	display: inline-block;
@@ -83,21 +79,13 @@ input {
 
 /* Personnalisation bouton à gauche simulant une fenêtre */
 
-.screen-header-button.close {
-	background: #ed1c6f;
-}
+.screen-header-button.close { background: #ed1c6f; }
 
-.screen-header-button.maximize {
-	background: #e8e925;
-}
+.screen-header-button.maximize { background: #e8e925; }
 
-.screen-header-button.minimize {
-	background: #74c54f;
-}
+.screen-header-button.minimize { background: #74c54f; }
 
-.screen-header-right {
-	display: flex;
-}
+.screen-header-right { display: flex; }
 
 /* Création 3 bulles --> settings */
 
@@ -109,9 +97,7 @@ input {
 	background: #999;
 }
 
-.screen-body {
-	display: flex;
-}
+.screen-body { display: flex; }
 
 .screen-body-item {
 	flex: 1;
@@ -150,9 +136,7 @@ input {
 	color: #888;
 }
 
-.app-form-group {
-	margin-bottom: 15px;
-}
+.app-form-group { margin-bottom: 15px; }
 
 .app-form-group button {
 	padding: 10px 20px;
@@ -182,13 +166,9 @@ input {
 	transition: border-color .2s;
 }
 
-.app-form-control::placeholder {
-	color: #666;
-}
+.app-form-control::placeholder { color: #666; }
 
-.app-form-control:focus {
-	border-bottom-color: #ddd;
-}
+.app-form-control:focus { border-bottom-color: #ddd; }
 
 .app-form-button {
 	background: none;
@@ -199,9 +179,7 @@ input {
 	outline: none;
 }
 
-.app-form-button:hover {
-	color: #b9134f;
-}
+.app-form-button:hover { color: #b9134f; }
 
 /* Partie responsive */
 

@@ -22,10 +22,7 @@ body {
 	background-color: #fff;
 }
 
-body,
-html {
-	height: 100%;
-}
+body, html { height: 100%; }
 
 section {
 	display: flex;
@@ -50,13 +47,9 @@ section {
 	background: transparent;
 }
 
-.Barre::-webkit-progress-bar {
-	background: inherit;
-}
+.Barre::-webkit-progress-bar { background: inherit; }
 
-.Barre::-webkit-progress-value {
-	background: #8f44fd;
-}
+.Barre::-webkit-progress-value { background: #8f44fd; }
 
 /* Personnalisation header comportant le Menu */
 
@@ -115,78 +108,28 @@ section {
 	gap: 5rem;
 }
 
-nav ul li a {
-	position: relative;
-}
+nav ul li a { position: relative; }
 
 nav ul li a::before {
 	content: attr(data-text);
 	position: absolute;
 	width: 0;
-	border-bottom: 2px solid cyan;
+	border-bottom: 2px solid #8f44fd;
 	overflow: hidden;
 	color: transparent;
 	transition: 1s;
 }
 
-nav ul li a:hover::before {
-	width: 100%;
-}
+nav ul li a:hover::before { width: 100%; }
 
-li {
-	list-style: none;
-}
+li { list-style: none; }
 
 a {
 	text-decoration: none;
 	color: #141414;
 }
 
-.btn {
-	display: none;
-}
-
-/* Personnalisation section Accueil*/
-
-#Accueil {
-	display: flex;
-	grid-template-columns: 1fr 1fr;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	font-family: w;
-	background-color: #fff;
-	background-image: url('../ASSETS/Accueil.png');
-	background-position: center;
-	background-size: cover;
-}
-
-.ensembleTitres {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin-top: 10rem;
-}
-
-.Titre1 {
-	margin-left: 25rem;
-	font-size: 3rem;
-	color: white;
-}
-
-.Titre2 {
-	margin-bottom: 5rem;
-	margin-left: 14rem;
-	font-size: 3rem;
-	color: white;
-}
-
-.Légende {
-	margin-top: 26rem;
-	text-align: center;
-	font-size: 1.5rem;
-	color: white;
-}
+.btn { display: none; }
 
 /* Style Présentation personnelle */
 
@@ -194,6 +137,7 @@ a {
 	display: flex;
 	align-items: center;
 	margin-left: 10rem;
+	margin-top: 5rem;
 }
 
 .contenuPresentation {
@@ -201,9 +145,7 @@ a {
 	padding: 20px;
 }
 
-.contenuPresentation .Logo {
-	width: 10%;
-}
+.contenuPresentation .Logo { width: 10%; }
 
 .Bloc {
 	font-size: 4rem;
@@ -213,6 +155,13 @@ a {
 a img {
 	width: 5%;
 	margin-top: 1rem;
+}
+
+span a img:hover {
+	width: 5%;
+	margin-top: 1rem;
+	transform: scale(1.1);
+	opacity: 0.8;
 }
 
 button {
@@ -229,6 +178,21 @@ button {
 	max-width: 60%;
 	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 	transition: border-radius 0.5s ease-in-out;
+}
+
+.Main {
+	width: 60px;
+	height: 60px;
+	animation: wave 2s infinite;
+}
+
+@keyframes wave {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(30deg);
+	}
 }
 
 /* Style Contenu personnel */
@@ -318,9 +282,7 @@ button {
 	border-radius: 0;
 }
 
-.card.centre {
-	margin-top: 70px;
-}
+.card.centre { margin-top: 70px; }
 
 .Niveau {
 	width: 30%;
@@ -363,9 +325,7 @@ button {
 	color: rgb(85,85,85);
 }
 
-.Zone {
-	display: flex;
-}
+.Zone { display: flex; }
 
 .Article {
 	display: flex;
@@ -383,9 +343,7 @@ article {
 	gap: 0.5rem;
 }
 
-article .icon {
-	cursor: default;
-}
+article .icon { cursor: default; }
 
 .icon {
 	height: 2rem;
@@ -394,9 +352,7 @@ article .icon {
 
 /* Style partie projets */
 
-#projets {
-	margin-top: 25rem;
-}
+#projets { margin-top: 25rem; }
 
 .ensembleProjets {
 	padding-right: 15rem;
@@ -412,9 +368,7 @@ article .icon {
 	gap: 5rem;
 }
 
-.Article {
-	gap: 2rem;
-}
+.Article { gap: 2rem; }
 
 .Etiquette {
 	display: flex;
@@ -471,9 +425,7 @@ article .icon {
 	color: #767676;
 }
 
-#Contact {
-	margin-top: 32rem;
-}
+#Contact { margin-top: 32rem; }
 
 /* Personnalisation footer */
 
@@ -503,9 +455,7 @@ footer {
 	font-size: 16px;
 }
 
-.footer_Section p {
-	font-size: 14px;
-}
+.footer_Section p { font-size: 14px; }
 
 .footer_Section i {
 	margin-top: 1.2rem;
@@ -527,20 +477,13 @@ footer {
 	list-style: none;
 }
 
-.social-icons li {
-	margin: 0 10px;
-}
+.social-icons li { margin: 0 10px; }
 
 .social-icons img {
 	width: 30px;
 	height: 30px;
 }
 
-.footer_Section p,
-.social-icons a {
-	color: #767676;
-}
+.footer_Section p, .social-icons a { color: #767676; }
 
-.footer_Section a:hover {
-	opacity: 0.7;
-}
+.footer_Section a:hover { opacity: 0.7; }

@@ -49,16 +49,6 @@
 
 		<progress max="100" value="0" class="Barre"></progress>
 
-		<!-- Page de bienvenue -->
-
-		<div id="Accueil">
-			<div class="ensembleTitres">
-				<h1 class="Titre1">Bienvenue sur</h1>
-				<h1 class="Titre2">mon portolio</h1>
-			</div>
-			<h1 class="Légende">"La passion du code se mêle à la créativité pour donner vie à des solutions uniques"</h1>
-		</div>
-
 		<!-- Section de présentation -->
 
 		<section id="Presentation">
@@ -67,7 +57,7 @@
 					<h1 class="Bloc">
 						Full-Stack Junior<br>
 						Développeur
-						<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtm_u7xsO61vXS_MQ3-qz1DO-KJbZId6NA1LOOInNTORM-wUwm" alt="Image de Bienvenue" class="Logo">
+						<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtm_u7xsO61vXS_MQ3-qz1DO-KJbZId6NA1LOOInNTORM-wUwm" alt="Image de Bienvenue" class="Main">
 					</h1>
 					<p>
 						Salut, je suis Kyliann Levesque. Un passionné de développement<br>
@@ -87,6 +77,18 @@
 				</div>
 			</div>
 		</section>
+
+		<script>
+			const animationSpeed = 2000; // 2 secondes
+			
+			const handElement = document.querySelector('.main');
+			
+			function startWaveAnimation() {
+				handElement.style.animationDuration = animationSpeed + 'ms';
+			}
+			
+			startWaveAnimation();
+		</script>
 
 		<!-- Script permettant l'affichage du bouton actif ainsi que son contenu  -->
 
