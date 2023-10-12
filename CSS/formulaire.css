@@ -109,6 +109,11 @@ input {
 	flex-direction: column;
 }
 
+.LI-profile-badge {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
 /* Contact */
 
 .app-title {
@@ -152,6 +157,10 @@ input {
 .app-form-group.buttons {
 	margin-bottom: 0;
 	text-align: right;
+}
+
+.valider {
+	margin-left: -20px;
 }
 
 .app-form-control {

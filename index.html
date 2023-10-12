@@ -78,17 +78,9 @@
 			</div>
 		</section>
 
-		<script>
-			const animationSpeed = 2000; // 2 secondes
-			
-			const handElement = document.querySelector('.main');
-			
-			function startWaveAnimation() {
-				handElement.style.animationDuration = animationSpeed + 'ms';
-			}
-			
-			startWaveAnimation();
-		</script>
+		<!-- Script permettant l'animation de l'image représentant une main -->
+
+		<script src="./JS/Image.js"></script>
 
 		<!-- Script permettant l'affichage du bouton actif ainsi que son contenu  -->
 
@@ -305,8 +297,10 @@
 
 		<!-- Section Contact -->
 
+		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
 		<section id="Contact">
-			<p>N'hésitez pas via ce formulaire ou mon mail  présent dessus à me</p>
+			<p>N'hésitez pas via ce formulaire ou mon mail présent dessus à me</p>
 			<h1>Contacter</h1>
 			<div class="section" id="Commentaire">
 				<div class="background">
@@ -330,6 +324,7 @@
 										<span>CONTACTEZ</span>
 										<span>MOI</span>
 									</div>
+									<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="kyliann-levesque-87711a277" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/kyliann-levesque-87711a277?trk=profile-badge"></a></div>
 									<div class="app-contact">kyliann.levesque@etu.univ-lehavre.fr</div>
 								</div>
 								<div class="screen-body-item">
@@ -342,7 +337,7 @@
 										</div>
 										<div class="app-form-group buttons">
 											<button class="app-form-button" onclick="resetForm()">RÉINITIALISER</button>
-											<button class="app-form-button" id="submitButton">ENVOYER</button>
+											<button class="app-form-button valider" id="submitButton">ENVOYER</button>
 										</div>
 									</div>
 								</div>
