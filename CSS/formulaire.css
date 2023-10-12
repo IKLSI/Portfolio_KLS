@@ -226,4 +226,8 @@ input {
 	.container {
 		width: 100%;
 	}
+
+	.LI-profile-badge {
+		display: none;
+	}
 }
