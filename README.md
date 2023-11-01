@@ -1,4 +1,4 @@
-# Portfolio - Développeur Junior
+# Portfolio
 
 ![Aperçu du site](./ASSETS/Apercu.png)
 
@@ -14,6 +14,8 @@ Le site dispose d'une barre de navigation simple en haut, qui permet aux utilisa
 
 Le site dispose d'un formulaire de contact relié à Firebase, qui permet aux utilisateurs de laisser un message avec leur adresse mail afin que je puisse en prendre connaissance. Aucune donnée n'est utilisée à une quelconque fin.
 Sur ce formulaire est également présent mon adresse mail universitaire pour me contacter directement.
+
+### [Live demo](https://iklsi.github.io/Portfolio/)
 
 ## Auteur
 

@@ -200,17 +200,6 @@
 /* Media screen pc portbale */
 
 @media screen and (min-width:769px) and (max-width:1500px) {
-	.Légende {
-		margin-top: 22rem;
-	}
-
-	.ensembleTitres {
-		margin-top: 8rem;
-	}
-
-	.Titre2 {
-		margin-left: 7rem;
-	}
 
 	.serieBouton {
 		left: 55%;
@@ -230,8 +219,15 @@
 		width: 400px;
 	}
 
-	#projets,
+	#projets {
+		margin-top: 65rem;
+	}
+
 	#Contact {
-		margin-top: 45rem;
+		margin-top: 75rem;
+	}
+
+	footer {
+		margin-top: 2rem;
 	}
 }
