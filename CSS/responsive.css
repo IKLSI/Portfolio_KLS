@@ -4,6 +4,10 @@
 
 	/* Personnalisation menu */
 
+	.cursor {
+		display: none;
+	}
+
 	nav {
 		flex-direction: column;
 		align-items: flex-start;
@@ -32,6 +36,7 @@
 
 	.btn {
 		display: block;
+		margin-top: -0.5rem;
 	}
 
 	/* Section présentation */
@@ -130,7 +135,7 @@
 	/* Section projets */
 
 	#Projets {
-		margin-top: 115rem;
+		margin-top: 175rem;
 	}
 
 	.ensembleProjets {
@@ -170,7 +175,7 @@
 	/* Section contact */
 
 	#Contact {
-		margin-top: 90rem;
+		margin-top: 145rem;
 	}
 
 	#Contact p {

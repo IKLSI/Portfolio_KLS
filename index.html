@@ -11,10 +11,20 @@
 		<link rel="stylesheet" href="./CSS/style.css">
 		<link rel="stylesheet" href="./CSS/formulaire.css">
 		<link rel="stylesheet" href="./CSS/responsive.css">
+		<link rel="stylesheet" href="./CSS/loader.css">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
+
+		<!-- Création du curseur personnalisé -->
+
+		<div class="cursor"></div>
+
+		<!-- Création du menu -->
+
 		<header>
 			<nav class="Menu">
 				<span class="Action"></span>
@@ -49,19 +59,43 @@
 
 		<progress max="100" value="0" class="Barre"></progress>
 
+		<!-- Section Accueil - Chargement -->
+
+		<section id="Accueil">
+			<div class="loader">
+				<div class="progress">
+					<div id="bar">
+						<div id="barconfirm">
+							0%
+						</div>
+					</div>
+					<div id="percent"></div>
+				</div>
+			</div>
+			<div class="main-page">
+				<div class="content">
+					<h1 class="cursor-scale">Kyliann Levesque</h1>
+					<h2 class="cursor-scale small">Développeur Full-Stack Junior</h2>
+				</div>
+			</div>
+		</section>
+
+		<!-- Script permettant l'animation du pourcentage et de l'arrivée sur la page -->
+
+		<script src="./JS/Loader.js"></script>
+
 		<!-- Section de présentation -->
 
 		<section id="Presentation">
 			<div class="Presentation">
 				<div class="contenuPresentation">
 					<h1 class="Bloc">
-						Full-Stack Junior<br>
-						Développeur
+						Présentation
 						<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtm_u7xsO61vXS_MQ3-qz1DO-KJbZId6NA1LOOInNTORM-wUwm" alt="Image de Bienvenue" class="Main">
 					</h1>
 					<p>
-						Salut, je suis Kyliann Levesque. Un passionné de développement<br>
-						Web français encore en étude.
+						Bienvenue, je me présente je suis Kyliann Levesque.<br>
+						Un passionné de développement français encore en étude.
 					</p>
 					<span>
 						<a href="https://github.com/IKLSI" target="_BLANK">
@@ -94,7 +128,7 @@
 			<p>Découvre mon</p>
 			<h1>Profil</h1>
 			<div class="Personnel">
-				<img src="https://cdn.create.vista.com/api/media/small/204346518/stock-photo-cropped-shot-man-working-laptop-having-cup-coffee-workplace-white" alt="Environnement de travail">
+				<img src="https://cdn.create.vista.com/api/media/small/204346518/stock-photo-cropped-shot-man-working-laptop-having-cup-coffee-workplace-white" alt="Environnement de travail" class="cursor-scale">
 				<div class="serieBouton">
 					<button id="personnel" class="active">Personnel</button>
 					<button id="centre">Centres d'intérêts</button>
@@ -116,7 +150,7 @@
 				</div>
 			</div>
 		</section>
-
+		
 		<!-- Section Acquis -->
 
 		<section id="Acquis">
@@ -125,7 +159,7 @@
 			<div class="Langage">
 				<div class="Zone">
 					<div class="Carte">
-						<h2 class="Intitule">Développement</h2>
+						<h2 class="Intitule">Langages</h2>
 						<div class="Article">
 							<article>
 								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
@@ -172,7 +206,7 @@
 						</div>
 					</div>
 					<div class="Carte">
-						<h2 class="Intitule">Outils</h2>
+						<h2 class="Intitule">Technologies</h2>
 						<div class="Article">
 							<article>
 								<img src="./ASSETS/Verifie.png" alt="Verifié" class="icon">
@@ -249,6 +283,23 @@
 				</div>
 				<div class="Etiquette Projets">
 					<div class="projetImg">
+						<img src="https://imgs.search.brave.com/SCf92tGWixv5G8B3Uxh0TBPf6fqadKa7T91o5B-6ua8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWNvZGVjYW1w/Lm9yZy9uZXdzL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzIwMDAv/MjAyMi8wMy9Db3Zl/ci5wbmc" alt="Article" height="200px">
+					</div>
+					<div class="projetContenu">
+						<p class="TitreProjet">Extension</p>
+						<p>Conception d'une extension pour Visual Studio Code facilitant le développement HTML/CSS en offrant des raccourcis et commandes pratiques. Accélère la création de balises HTML, de styles d'en-têtes, de pieds de page, de formulaires, et bien plus encore.</p>
+						<div>
+							<a href="https://github.com/IKLSI/HtmlCSS-Completion" target="_BLANK">
+								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
+							</a>
+							<a href="https://marketplace.visualstudio.com/items?itemName=0KLS0.htmlcss-completion" target="_BLANK">
+								<img src="https://imgs.search.brave.com/AaQd-fflt1tRebxmOMlGPZgP5QVeZ8DEkyx6_Xni45k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMjk4NS8yOTg1/MTY4LnBuZw" alt="Lien de renvoi">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Etiquette Projets">
+					<div class="projetImg">
 						<img src="./ASSETS/Dashboard.png" alt="Dashboard" class="Dashboard">
 					</div>
 					<div class="projetContenu">
@@ -267,13 +318,27 @@
 					</div>
 					<div class="projetContenu">
 						<p class="TitreProjet">RC</p>
-						<p>Projet de présentation qui met en avant différents modèles de voitures radiocommandée avec la possibilité de laisser des avis ou encore de consulter une boutique éphémère avec plateforme de paiement non-active. Réalisé en HTML, CSS, Javascript et Firebase pour la gestion de la base de données.</p>
+						<p>Projet de présentation qui met en avant différents modèles de voitures radiocommandée avec la possibilité de consulter une boutique éphémère avec plateforme de paiement non-active. Réalisé en HTML, CSS, Javascript et Firebase pour la gestion de la base de données.</p>
 						<div>
 							<a href="https://github.com/IKLSI/RC" target="_BLANK">
 								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
 							</a>
 							<a href="https://iklsi.github.io/RC/" target="_BLANK">
 								<img src="https://imgs.search.brave.com/AaQd-fflt1tRebxmOMlGPZgP5QVeZ8DEkyx6_Xni45k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMjk4NS8yOTg1/MTY4LnBuZw" alt="Lien de renvoi">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Etiquette Projets">
+					<div class="projetImg">
+						<img src="https://www.pyrenees-software.com/wp-content/uploads/2020/08/Developpement-fullstack.jpg" alt="Article" class="Medium">
+					</div>
+					<div class="projetContenu">
+						<p class="TitreProjet">Graphe</p>
+						<p>Développement d’une application Java en lien avec mes études par équipe de 4. Elle permet la navigation d'un jeu de parcours basé sur les concepts mathématiques des graphes. J'ai été responsable de la conception de l'interface utilisateur et contribuer au développement back-end.</p>
+						<div>
+							<a href="https://github.com/IKLSI/Graphe" target="_BLANK">
+								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
 							</a>
 						</div>
 					</div>
@@ -292,7 +357,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 
 		<!-- Section Contact -->
@@ -378,6 +442,9 @@
 		</footer>
 
 		<!-- Déclaration des scripts -->
+
+		<script src="./JS/Cursor.js"></script>
+		<script src="./JS/Scroll.js"></script>
 
 		<!-- Firebase | Base de données formulaire -->
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>

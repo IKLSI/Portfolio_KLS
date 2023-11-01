@@ -20,6 +20,7 @@ body {
 	font-family: "Poppins",sans-serif;
 	color: #141414;
 	background-color: #fff;
+	cursor: none;
 }
 
 body, html { height: 100%; }
@@ -30,6 +31,46 @@ section {
 	align-items: center;
 	justify-content: center;
 	height: 90vh;
+}
+
+/* Personnalisation curseur */
+
+.cursor {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	margin-left: -20px;
+	margin-top: -20px;
+	border-radius: 50%;
+	border: 2px solid #121212;
+	transition: transform 0.3s ease;
+	transform-origin: center center;
+	pointer-events: none;
+	z-index: 1000;
+}
+
+.cursor::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: #121212;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1; /* Assure that the dot is on top of the cursor */
+}
+
+.grow, .grow-small {
+	transform: scale(4);
+	background: white;
+	mix-blend-mode: difference; 
+	border: none;
+}
+
+.grow-small{
+	transform: scale(2);
 }
 
 /* Personnalisation de la barre d'avancement slon la position sur la page */
@@ -55,7 +96,7 @@ section {
 
 .Menu {
 	display: flex;
-	z-index: 1000;
+	z-index: 999;
 	position: fixed;
 	top: 0;
 	align-items: center;
@@ -352,7 +393,7 @@ article .icon { cursor: default; }
 
 /* Style partie projets */
 
-#projets { margin-top: 25rem; }
+#projets { margin-top: 60rem; }
 
 .ensembleProjets {
 	padding-right: 15rem;
@@ -425,12 +466,11 @@ article .icon { cursor: default; }
 	color: #767676;
 }
 
-#Contact { margin-top: 32rem; }
+#Contact { margin-top: 68em; }
 
 /* Personnalisation footer */
 
 footer {
-	margin-top: 4rem;
 	padding: 20px;
 	text-align: center;
 	color: #767676;
