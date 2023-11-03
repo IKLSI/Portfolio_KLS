@@ -87,23 +87,18 @@
 
 	.Personnel img {
 		margin-left: 17%;
-		margin-top: 12rem;
+		margin-top: 0rem;
 		width: 60%;
 	}
 
-	.serieBouton {
-		left: 20%;
-	}
-
-	.serieBouton button {
-		margin-bottom: 2rem;
-	}
-
-	.contenu-Carte div {
-		width: 100%;
-		margin-top: 50px;
-		margin-left: -1rem;
+	.contenu-Carte .slide {
+		margin-top: 20px;
 		padding: 0;
+		margin-left: -2rem;
+	}
+
+	.navigation {
+		margin-left: -2rem;
 	}
 
 	.Carte {
@@ -117,7 +112,7 @@
 	/* Section acquis */
 
 	#Acquis {
-		margin-top: 40rem;
+		margin-top: 45rem;
 	}
 
 	.Zone {
@@ -134,33 +129,22 @@
 
 	/* Section projets */
 
-	#Projets {
-		margin-top: 175rem;
-	}
-
 	.ensembleProjets {
-		width: 85%;
+		width: 95%;
 		padding-right: 0;
 		padding-left: 0;
 	}
 
-	.projetImg img {
-		width: 400px;
-	}
-
-	.projetImg img,
-	.projetImg .Dashboard,
-	.projetImg .Medium {
-		width: 350px;
-	}
-
 	.projetContenu p {
-		width: 60%;
-		margin-left: 4rem;
+		width: 100%;
 	}
 
 	.projetContenu div img {
 		width: 25px;
+	}
+
+	.Etiquette {
+		width: 100%;
 	}
 
 	.Projets {
@@ -172,10 +156,22 @@
 		padding: 0;
 	}
 
+	.Etiquette:hover .TitreProjet {
+		display: none;
+	}
+
+	.TitreProjet {
+		display: relative;
+	}
+
+	#projets {
+		margin-top: 60rem;
+	}
+
 	/* Section contact */
 
 	#Contact {
-		margin-top: 145rem;
+		margin-top: 40rem;
 	}
 
 	#Contact p {
@@ -201,14 +197,6 @@
 
 @media screen and (min-width:769px) and (max-width:1500px) {
 
-	.serieBouton {
-		left: 55%;
-	}
-
-	.serieBouton button {
-		margin: 15px;
-	}
-
 	.Personnel img {
 		margin-left: 17rem;
 	}
@@ -220,11 +208,15 @@
 	}
 
 	#projets {
-		margin-top: 65rem;
+		margin-top: 8rem;
+	}
+
+	.projetContenu div a img {
+		margin-top: 0.5rem;
 	}
 
 	#Contact {
-		margin-top: 75rem;
+		margin-top: 12rem;
 	}
 
 	footer {

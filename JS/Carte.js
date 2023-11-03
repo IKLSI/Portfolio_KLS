@@ -1,18 +1,28 @@
-$(document).ready(function() {
-	$(".card").hide();
+const slides = document.querySelectorAll('.slide');
+const bullets = document.querySelectorAll('.bulle');
+let currentSlide = 0;
+let interval; // Variable pour stocker l'intervalle de temps
 
-	// Afficher les cartes correspondant à la zone "Personnel" par défaut
-	$(".card.personnel").show();
+function showSlide(index) {
+	slides[currentSlide].classList.remove('active');
+	slides[index].classList.add('active');
+	bullets[currentSlide].classList.remove('active');
+	bullets[index].classList.add('active');
+	currentSlide = index;
+	restartInterval(); // Réinitialiser l'intervalle de temps lors du changement de diapositive
+}
 
-	// Lorsque le bouton "Personnel" est cliqué afficher les cartes correspondant à la zone "Personnel"
-	$("#personnel").click(function() {
-		$(".card").hide();
-		$(".card.personnel").show();
-	});
+function startInterval() {
+	interval = setInterval(() => {
+		const nextSlide = (currentSlide + 1) % slides.length;
+		showSlide(nextSlide);
+	}, 5000);
+}
 
-	// Lorsque le bouton "Centre" est cliqué afficher les cartes correspondant à la zone "Centre d'intérêt"
-	$("#centre").click(function() {
-		$(".card").hide();
-		$(".card.centre").show();
-	});
-});
+function restartInterval() {
+	clearInterval(interval); // Effacer l'intervalle de temps actuel
+	startInterval(); // Démarrer un nouvel intervalle de temps
+}
+
+startInterval(); // Démarrer l'intervalle de temps initial
+showSlide(currentSlide);

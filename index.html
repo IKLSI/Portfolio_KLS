@@ -4,6 +4,10 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Portfolio de Kyliann Levesque, développeur web full-stack junior. A travers ce site vous pourrez découvrir mes projets, mes compétences et me contacter.">
+		<meta name="keywords" content="Développeur, Développement, Portfolio, Projets, Compétences, Contact, HTML, CSS, JS">
+		<meta name="author" content="Kyliann Levesque">
+		<meta name="robots" content="index, follow">
 
 		<title>Kyliann • Développeur</title>
 		<link href="https://png.pngtree.com/png-clipart/20230411/ourmid/pngtree-modern-macbook-screen-frame-transparent-mockup-png-image_6699278.png" rel="icon" type="image/x-icon">
@@ -37,7 +41,7 @@
 						<a href="#Presentation" data-text="About">À propos</a>
 					</li>
 					<li>
-						<a href="#Projets" data-text="Projets">Projets</a>
+						<a href="#projets" data-text="Projets">Projets</a>
 					</li>
 					<li>
 						<a href="#Contact" data-text="Contact">Contact</a>
@@ -51,10 +55,6 @@
 			</nav>
 		</header>
 
-		<!-- Script permettant sur un petit écran de faire apparaître le menu lors du clic sur le logo -->
-
-		<script src="./JS/Menu.js"></script>
-
 		<!-- Barre de progression sur la page grâce à GSAP -->
 
 		<progress max="100" value="0" class="Barre"></progress>
@@ -65,24 +65,22 @@
 			<div class="loader">
 				<div class="progress">
 					<div id="bar">
-						<div id="barconfirm">
-							0%
-						</div>
+						<div id="barconfirm"></div>
 					</div>
 					<div id="percent"></div>
 				</div>
 			</div>
 			<div class="main-page">
 				<div class="content">
-					<h1 class="cursor-scale">Kyliann Levesque</h1>
-					<h2 class="cursor-scale small">Développeur Full-Stack Junior</h2>
+					<h1 class="cursor-scale">
+						Kyliann Levesque
+					</h1>
+					<h2 class="cursor-scale small barreLongueur">
+						Développeur Full-Stack Junior
+					</h2>
 				</div>
 			</div>
 		</section>
-
-		<!-- Script permettant l'animation du pourcentage et de l'arrivée sur la page -->
-
-		<script src="./JS/Loader.js"></script>
 
 		<!-- Section de présentation -->
 
@@ -90,12 +88,14 @@
 			<div class="Presentation">
 				<div class="contenuPresentation">
 					<h1 class="Bloc">
-						Présentation
+						À propos de<br> moi
 						<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtm_u7xsO61vXS_MQ3-qz1DO-KJbZId6NA1LOOInNTORM-wUwm" alt="Image de Bienvenue" class="Main">
 					</h1>
 					<p>
 						Bienvenue, je me présente je suis Kyliann Levesque.<br>
-						Un passionné de développement français encore en étude.
+						Un passionné de développement français encore en étude.<br>
+						J'aime créer des réalisations qualitatives et responsives<br>
+						qui offrent une expérience utilisateur optimale.<br>
 					</p>
 					<span>
 						<a href="https://github.com/IKLSI" target="_BLANK">
@@ -112,16 +112,6 @@
 			</div>
 		</section>
 
-		<!-- Script permettant l'animation de l'image représentant une main -->
-
-		<script src="./JS/Image.js"></script>
-
-		<!-- Script permettant l'affichage du bouton actif ainsi que son contenu  -->
-
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="./JS/Carte.js"></script>
-		<script src="./JS/Actif.js"></script>
-
 		<!-- Section Personnel -->
 
 		<section>
@@ -129,23 +119,21 @@
 			<h1>Profil</h1>
 			<div class="Personnel">
 				<img src="https://cdn.create.vista.com/api/media/small/204346518/stock-photo-cropped-shot-man-working-laptop-having-cup-coffee-workplace-white" alt="Environnement de travail" class="cursor-scale">
-				<div class="serieBouton">
-					<button id="personnel" class="active">Personnel</button>
-					<button id="centre">Centres d'intérêts</button>
-				</div>
 				<div class="contenu-Carte zone_Carte">
-					<div class="card personnel">
-						<h3>
-							Étudiant en développement informatique avec plus de deux ans d'expériences, je suis passionné par la réalisation et le déploiement d'applications et de services web.<br>
-							Spécialisé dans le développement web front-end je suis également à l'aise avec le back-end et la gestion de bases de données.<br>
-							Je suis rigoureux, acharné, motivé, ponctuel et curieux, je m'efforce de toujours donner le meilleur de moi-même dans les projets que j'entreprends.<br>
-						</h3>
+					<div class="slide">
+						<h3>Personnel</h3>
+						<p>Étudiant en développement informatique avec plus de deux ans d'expériences, je suis passionné par la réalisation et le déploiement d'applications et de services web.<br>
+							Spécialisé dans le développement web je suis également à l'aise dans la réalisation de développement le back-end et la gestion de bases de données.<br>
+							La résistance au stress, le sens des procédures ou encore le travail en équipe sont des qualités que je possède.</p>
 					</div>
-					<div class="card centre">
-						<h3>
-							Passionné d'automobile, je suis fasciné par la technologie et l'ingénierie qui se cachent derrière les modèles de sport qui nous entourent. J'aime suivre les compétitions de sports automobiles et je m'intéresse également à la mécanique automobile.<br>
-							Ayant un profond attrait depuis l'enfance pour la musique, je joue de la batterie depuis l'âge de 9 ans dans un groupe. La musique est également une source d'inspiration et de motivation dans mon travail quotidien.<br>
-						</h3>
+					<div class="slide">
+						<h3>Centres d'intérêts</h3>
+						<p>Passionné d'automobile, je suis fasciné par la technologie et l'ingénierie qui se cachent derrière les modèles qui nous entourent. J'aime suivre les compétitions de sports automobiles et je m'intéresse également à la mécanique automobile.<br>
+							Ayant un profond attrait depuis l'enfance pour la musique, elle est également une source d'inspiration et de motivation dans mon travail quotidien.</p>
+					</div>
+					<div class="navigation">
+						<div class="bulle active" onclick="showSlide(0)"></div>
+						<div class="bulle" onclick="showSlide(1)"></div>
 					</div>
 				</div>
 			</div>
@@ -256,8 +244,6 @@
 			</div>
 		</section>
 
-		<div id="Projets"></div>
-
 		<!-- Section Projets -->
 
 		<section id="projets">
@@ -266,11 +252,11 @@
 			<div class="ensembleProjets">
 				<div class="Etiquette Projets">
 					<div class="projetImg">
-						<img src="https://www.bmw.lu/content/dam/bmw/common/all-models/m-series/m4-coupe/2022/technical_data/bmw-4-series-coupe-m-automobiles-technical-data-sp-desktop.jpg" alt="BMW">
+						<img src="https://www.bmw.lu/content/dam/bmw/common/all-models/m-series/m4-coupe/2022/technical_data/bmw-4-series-coupe-m-automobiles-technical-data-sp-desktop.jpg" alt="BMW" height="220px">
 					</div>
 					<div class="projetContenu">
-						<p class="TitreProjet">BMW</p>
-						<p>Projet vitrine de présentation d'un produit pour une marque de voiture. Le site comporte un design soigné, épuré et entièrement responsive captivant l'essence même de ce produit. Réalisé en HTML pour la structure, CSS pour l'esthétique et Javascript pour l'interactivité.</p>
+						<p class="TitreProjet">Produit</p>
+						<p>Projet vitrine de présentation d'un produit d'une marque de voiture. Le site comporte un design soigné, épuré et entièrement responsive captivant l'essence même de ce produit. Réalisé en HTML pour la structure, CSS pour l'esthétique et Javascript pour l'interactivité.</p>
 						<div>
 							<a href="https://github.com/IKLSI/BMW" target="_BLANK">
 								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
@@ -283,11 +269,11 @@
 				</div>
 				<div class="Etiquette Projets">
 					<div class="projetImg">
-						<img src="https://imgs.search.brave.com/SCf92tGWixv5G8B3Uxh0TBPf6fqadKa7T91o5B-6ua8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWNvZGVjYW1w/Lm9yZy9uZXdzL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzIwMDAv/MjAyMi8wMy9Db3Zl/ci5wbmc" alt="Article" height="200px">
+						<img src="https://code.visualstudio.com/opengraphimg/opengraph-blog.png" alt="Article">
 					</div>
 					<div class="projetContenu">
 						<p class="TitreProjet">Extension</p>
-						<p>Conception d'une extension pour Visual Studio Code facilitant le développement HTML/CSS en offrant des raccourcis et commandes pratiques. Accélère la création de balises HTML, de styles d'en-têtes, de pieds de page, de formulaires, et bien plus encore.</p>
+						<p>Conception d'une extension pour Visual Studio Code facilitant le développement HTML/CSS en offrant des raccourcis et commandes pratiques. Accélère la création de balises HTML, de styles d'en-têtes, de pieds de page, de formulaires, et bien plus encore. Réalisé en TypeScript et JavaScript.</p>
 						<div>
 							<a href="https://github.com/IKLSI/HtmlCSS-Completion" target="_BLANK">
 								<img src="https://imgs.search.brave.com/s8k5Ls0bXCjspMoROWLbVITlzAizZ6t6d5zbqS94itM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L2lj/b25lLWdpdGh1Yi1u/b2lyLnBuZw" alt="Github">
@@ -300,7 +286,7 @@
 				</div>
 				<div class="Etiquette Projets">
 					<div class="projetImg">
-						<img src="./ASSETS/Dashboard.png" alt="Dashboard" class="Dashboard">
+						<img src="./ASSETS/Dashboard.png" alt="Dashboard" height="220px">
 					</div>
 					<div class="projetContenu">
 						<p class="TitreProjet">Dashboard</p>
@@ -331,7 +317,7 @@
 				</div>
 				<div class="Etiquette Projets">
 					<div class="projetImg">
-						<img src="https://www.pyrenees-software.com/wp-content/uploads/2020/08/Developpement-fullstack.jpg" alt="Article" class="Medium">
+						<img src="https://www.pyrenees-software.com/wp-content/uploads/2020/08/Developpement-fullstack.jpg" alt="Article">
 					</div>
 					<div class="projetContenu">
 						<p class="TitreProjet">Graphe</p>
@@ -360,8 +346,6 @@
 		</section>
 
 		<!-- Section Contact -->
-
-		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 		<section id="Contact">
 			<p>N'hésitez pas via ce formulaire ou mon mail présent dessus à me</p>
@@ -443,16 +427,50 @@
 
 		<!-- Déclaration des scripts -->
 
+		<!-- Script permettant sur un petit écran de faire apparaître le menu lors du clic sur le logo -->
+
+		<script src="./JS/Menu.js"></script>
+
+		<!-- Script permettant de remplacer le curseur par un personnalisé qui suit la souris -->
+
 		<script src="./JS/Cursor.js"></script>
+
+		<!-- Script permettant de faire défiler la page vers la section souhaitée lors du clic sur un lien du menu -->
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="./JS/Scroll.js"></script>
 
+		<!-- Script permettant de rendre transparent le menu sur la page d'accueil mais pas sur les autres pages -->
+
+		<script src="./JS/Transparent.js"></script>
+
+		<!-- Script permettant de faire l'animation du pourcentage de chargement -->
+
+		<script src="./JS/Loader.js"></script>
+
+		<!-- Script permettant de faire un menu de navigation entre 2 thématiques -->
+
+		<script src="./JS/Carte.js"></script>
+
 		<!-- Firebase | Base de données formulaire -->
+
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+		<!-- Script permettant de faire fonctionner le formulaire de contact -->
+
 		<script type="module" src="./JS/Firebase.js"></script>
+
+		<!-- Script permettant de réinitialiser le formulaire de contact lors du clic sur le bouton ou lors de l'envoi du formulaire -->
+
 		<script src="./JS/Reset.js"></script>
 
-		<!-- Barre de progression -->
+		<!-- Script permettant de faire apparaître mon profil LinkedIn -->
+
+		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+		<!-- Script permettant de faire apparaître la progression de la page -->
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 		<script src="./JS/Gsap.js"></script>
