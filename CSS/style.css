@@ -23,7 +23,10 @@ body {
 	cursor: none;
 }
 
-body, html { height: 100%; }
+body,
+html {
+	height: 100%;
+}
 
 section {
 	display: flex;
@@ -36,44 +39,45 @@ section {
 /* Personnalisation curseur */
 
 .cursor {
+	z-index: 1000;
 	position: fixed;
 	width: 40px;
 	height: 40px;
-	margin-left: -20px;
 	margin-top: -20px;
-	border-radius: 50%;
+	margin-left: -20px;
 	border: 2px solid #121212;
+	border-radius: 50%;
 	transition: transform 0.3s ease;
 	transform-origin: center center;
 	pointer-events: none;
-	z-index: 1000;
 }
 
 .cursor::after {
 	content: "";
+	z-index: 1;
 	position: absolute;
-	width: 6px;
-	height: 6px;
-	background-color: #121212;
-	border-radius: 50%;
 	top: 50%;
 	left: 50%;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #121212;
 	transform: translate(-50%, -50%);
-	z-index: 1; /* Assure that the dot is on top of the cursor */
 }
 
-.grow, .grow-small {
-	transform: scale(4);
-	background: white;
-	mix-blend-mode: difference; 
+.gros,
+.gros-petit {
 	border: none;
+	background: white;
+	transform: scale(4);
+	mix-blend-mode: difference;
 }
 
-.grow-small{
+.gros-petit {
 	transform: scale(2);
 }
 
-/* Personnalisation de la barre d'avancement slon la position sur la page */
+/* Personnalisation de la barre d'avancement selon la position sur la page */
 
 .Barre {
 	z-index: 1;
@@ -88,9 +92,13 @@ section {
 	background: transparent;
 }
 
-.Barre::-webkit-progress-bar { background: inherit; }
+.Barre::-webkit-progress-bar {
+	background: inherit;
+}
 
-.Barre::-webkit-progress-value { background: #8f44fd; }
+.Barre::-webkit-progress-value {
+	background: #8f44fd;
+}
 
 /* Personnalisation header comportant le Menu */
 
@@ -105,7 +113,6 @@ section {
 	padding: 1rem 3rem;
 	border-bottom: 1px solid #141414;
 	color: #141414;
-	transition: background 0.5s ease-in-out;
 }
 
 /* Personnalisation bande défilante */
@@ -143,13 +150,15 @@ section {
 .Contenu {
 	display: flex;
 	flex-direction: row;
+	gap: 5rem;
 	text-transform: uppercase;
 	font-weight: 300;
 	list-style: none;
-	gap: 5rem;
 }
 
-nav ul li a { position: relative; }
+nav ul li a {
+	position: relative;
+}
 
 nav ul li a::before {
 	content: attr(data-text);
@@ -161,24 +170,55 @@ nav ul li a::before {
 	transition: 1s;
 }
 
-nav ul li a:hover::before { width: 100%; }
+nav ul li a:hover::before {
+	width: 100%;
+}
 
-li { list-style: none; }
+li {
+	list-style: none;
+}
 
 a {
 	text-decoration: none;
 	color: #000;
 }
 
-.btn { display: none; }
+.btn {
+	display: none;
+}
+
+/* Style de la personnalisation du curseur sur des éléments spécifiques */
+
+.barreLongueur {
+	position: relative;
+	text-align: center;
+}
+
+.barreLongueur:before,
+.barreLongueur:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 30%;
+	border: none;
+	border-top: 2px solid black;
+}
+
+.barreLongueur:before {
+	right: 102%;
+}
+
+.barreLongueur:after {
+	left: 102%;
+}
 
 /* Style Présentation personnelle */
 
 .Presentation {
 	display: flex;
 	align-items: center;
-	margin-left: 10rem;
 	margin-top: 5rem;
+	margin-left: 10rem;
 }
 
 .contenuPresentation {
@@ -186,7 +226,9 @@ a {
 	padding: 20px;
 }
 
-.contenuPresentation .Logo { width: 10%; }
+.contenuPresentation .Logo {
+	width: 10%;
+}
 
 .Bloc {
 	font-size: 4rem;
@@ -201,8 +243,8 @@ a img {
 span a img:hover {
 	width: 5%;
 	margin-top: 1rem;
-	transform: scale(1.1);
 	opacity: 0.8;
+	transform: scale(1.1);
 }
 
 button {
@@ -213,29 +255,6 @@ button {
 	border-radius: 2rem;
 	font-weight: 600;
 	transition: all 300ms ease;
-}
-
-.barreLongueur {
-	position: relative;
-	text-align: center;
-}
-
-.barreLongueur:before,
-.barreLongueur:after {
-	content: '';
-	border: none;
-	border-top: 2px solid black;
-	width: 30%;
-	position: absolute;
-	top: 50%;
-}
-
-.barreLongueur:before {
-	right: 102%;
-}
-
-.barreLongueur:after {
-	left: 102%;
 }
 
 .Photo {
@@ -260,7 +279,8 @@ button {
 
 .Personnel img {
 	width: 25%;
-	margin-left: 25rem;
+	margin-right: 5rem;
+	margin-left: 20rem;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
 }
 
@@ -268,12 +288,13 @@ button {
 
 .contenu-Carte {
 	flex: 1;
-	margin-left: 6%;
+	margin-top: -4rem;
+	margin-right: 3rem;
+	margin-left: 3%;
 	padding: 20px;
 	text-align: center;
 	font-family: 'Poppins',sans-serif;
 	font-size: 15px;
-	line-height: 1.5;
 }
 
 .contenu-Carte h3 {
@@ -331,9 +352,9 @@ button {
 }
 
 .Zone {
+	gap: 2rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	gap: 2rem;
 }
 
 .Carte {
@@ -353,25 +374,29 @@ button {
 	color: rgb(85,85,85);
 }
 
-.Zone { display: flex; }
+.Zone {
+	display: flex;
+}
 
 .Article {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	gap: 2.5rem;
 	justify-content: space-around;
 	text-align: initial;
-	gap: 2.5rem;
 }
 
 article {
 	display: flex;
+	gap: 0.5rem;
 	justify-content: flex-start;
 	width: 10rem;
-	gap: 0.5rem;
 }
 
-article .icon { cursor: default; }
+article .icon {
+	cursor: default;
+}
 
 .icon {
 	height: 2rem;
@@ -391,21 +416,21 @@ article .icon { cursor: default; }
 .ensembleProjets {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 0 20px;
 	gap: 25px;
-	max-width: 1420px;
+	justify-content: space-between;
 	margin-top: 2rem;
+	padding: 0 20px;
+	max-width: 1420px;
 }
 
 .Etiquette {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
+	width: calc(33.33% - 20px);
 	border-radius: 1.7rem;
 	overflow: hidden;
-	width: calc(33.33% - 20px);
-	position: relative;
 }
 
 .projetImg {
@@ -419,18 +444,18 @@ article .icon { cursor: default; }
 }
 
 .TitreProjet {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #141414;
-	margin-bottom: 0.5rem;
 	display: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.9);
+	margin-bottom: 0.5rem;
 	padding: 10px;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #141414;
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .projetContenu {
@@ -440,9 +465,9 @@ article .icon { cursor: default; }
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.9);
 	padding: 20px;
 	opacity: 0;
+	background: rgba(255, 255, 255, 0.9);
 	transition: opacity 0.3s ease;
 }
 
@@ -456,8 +481,8 @@ article .icon { cursor: default; }
 }
 
 .projetContenu p {
-	color: #767676;
 	margin-top: 0;
+	color: #767676;
 }
 
 .projetContenu div a img {
@@ -467,7 +492,9 @@ article .icon { cursor: default; }
 	margin-top: 1rem;
 }
 
-#Contact { margin-top: 10em; }
+#Contact {
+	margin-top: 10em;
+}
 
 /* Personnalisation footer */
 
@@ -496,7 +523,9 @@ footer {
 	font-size: 16px;
 }
 
-.footer_Section p { font-size: 14px; }
+.footer_Section p {
+	font-size: 14px;
+}
 
 .footer_Section i {
 	margin-top: 1.2rem;
@@ -518,13 +547,20 @@ footer {
 	list-style: none;
 }
 
-.social-icons li { margin: 0 10px; }
+.social-icons li {
+	margin: 0 10px;
+}
 
 .social-icons img {
 	width: 30px;
 	height: 30px;
 }
 
-.footer_Section p, .social-icons a { color: #767676; }
+.footer_Section p,
+.social-icons a {
+	color: #767676;
+}
 
-.footer_Section a:hover { opacity: 0.7; }
+.footer_Section a:hover {
+	opacity: 0.7;
+}

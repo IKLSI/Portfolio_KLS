@@ -1,9 +1,6 @@
 /* Style responsive pour les petits écrans */
 
 @media screen and (max-width:768px) {
-
-	/* Personnalisation menu */
-
 	.cursor {
 		display: none;
 	}
@@ -74,9 +71,9 @@
 	}
 
 	.Main {
-		margin-top: 10px;
 		width: 40px;
 		height: 40px;
+		margin-top: 10px;
 	}
 
 	/* Section personnel */
@@ -86,27 +83,18 @@
 	}
 
 	.Personnel img {
-		margin-left: 17%;
-		margin-top: 0rem;
 		width: 60%;
+		margin-top: 0;
+		margin-left: 17%;
 	}
 
 	.contenu-Carte .slide {
-		margin-top: 20px;
+		margin-top: 6rem;
 		padding: 0;
-		margin-left: -2rem;
-	}
-
-	.navigation {
-		margin-left: -2rem;
 	}
 
 	.Carte {
 		margin-top: 3rem;
-	}
-
-	.card.centre {
-		margin-top: 50px;
 	}
 
 	/* Section acquis */
@@ -165,7 +153,7 @@
 	}
 
 	#projets {
-		margin-top: 60rem;
+		margin-top: 75rem;
 	}
 
 	/* Section contact */
@@ -196,7 +184,6 @@
 /* Media screen pc portbale */
 
 @media screen and (min-width:769px) and (max-width:1500px) {
-
 	.Personnel img {
 		margin-left: 17rem;
 	}

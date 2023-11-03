@@ -1,5 +1,5 @@
 let cursor = document.querySelector('.cursor');
-let cursorScale = document.querySelectorAll('.cursor-scale'); 
+let cursorScale = document.querySelectorAll('.echelle'); 
 let mouseX = 0;
 let mouseY = 0;
 
@@ -22,15 +22,15 @@ window.addEventListener('mousemove', (e)=> {
 
 cursorScale.forEach(link => {
 	link.addEventListener('mousemove', ()=> {
-		cursor.classList.add('grow'); 
-		if (link.classList.contains('small')){
-			cursor.classList.remove('grow');
-			cursor.classList.add('grow-small');
+		cursor.classList.add('gros'); 
+		if (link.classList.contains('petit')){
+			cursor.classList.remove('gros');
+			cursor.classList.add('gros-petit');
 		}
 	});
 	
 	link.addEventListener('mouseleave', ()=> {
-		cursor.classList.remove('grow');
-		cursor.classList.remove('grow-small');
+		cursor.classList.remove('gros');
+		cursor.classList.remove('gros-petit');
 	});
 })

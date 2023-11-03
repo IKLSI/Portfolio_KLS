@@ -1,6 +1,8 @@
 /* Style formulaire */
 
-#Commentaire { margin-top: 3%; }
+#Commentaire {
+	margin-top: 3%;
+}
 
 /* Personnalisation champs de saisie et bouton du formulaire */
 
@@ -33,40 +35,42 @@ input {
 }
 
 .container {
+	width: 80%;
 	margin: auto;
 	padding: 10px;
-	width: 80%;
 }
 
 .screen {
 	position: relative;
-	background: #3e3e3e;
 	border-radius: 15px;
+	background: #3e3e3e;
 }
 
 .screen:after {
 	content: '';
 	display: block;
+	z-index: -1;
 	position: absolute;
 	top: 0;
-	left: 20px;
 	right: 20px;
 	bottom: 0;
+	left: 20px;
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-	z-index: -1;
 }
 
 .screen-header {
 	display: flex;
 	align-items: center;
 	padding: 10px 20px;
-	background: #4d4d4f;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	background: #4d4d4f;
 }
 
-.screen-header-left { margin-right: auto; }
+.screen-header-left {
+	margin-right: auto;
+}
 
 .screen-header-button {
 	display: inline-block;
@@ -79,13 +83,21 @@ input {
 
 /* Personnalisation bouton à gauche simulant une fenêtre */
 
-.screen-header-button.close { background: #ed1c6f; }
+.screen-header-button.close {
+	background: #ed1c6f;
+}
 
-.screen-header-button.maximize { background: #e8e925; }
+.screen-header-button.maximize {
+	background: #e8e925;
+}
 
-.screen-header-button.minimize { background: #74c54f; }
+.screen-header-button.minimize {
+	background: #74c54f;
+}
 
-.screen-header-right { display: flex; }
+.screen-header-right {
+	display: flex;
+}
 
 /* Création 3 bulles --> settings */
 
@@ -97,7 +109,9 @@ input {
 	background: #999;
 }
 
-.screen-body { display: flex; }
+.screen-body {
+	display: flex;
+}
 
 .screen-body-item {
 	flex: 1;
@@ -118,18 +132,18 @@ input {
 
 .app-title {
 	display: flex;
-	flex-direction: column;
 	position: relative;
-	color: #ea1d6f;
+	flex-direction: column;
 	font-size: 26px;
+	color: #ea1d6f;
 }
 
 .app-title:after {
 	content: '';
 	display: block;
 	position: absolute;
-	left: 0;
 	bottom: -10px;
+	left: 0;
 	width: 25px;
 	height: 4px;
 	background: #ea1d6f;
@@ -141,7 +155,9 @@ input {
 	color: #888;
 }
 
-.app-form-group { margin-bottom: 15px; }
+.app-form-group {
+	margin-bottom: 15px;
+}
 
 .app-form-group button {
 	padding: 10px 20px;
@@ -150,8 +166,8 @@ input {
 }
 
 .app-form-group.message {
-	margin-top: 40px;
 	width: 100%;
+	margin-top: 40px;
 }
 
 .app-form-group.buttons {
@@ -166,33 +182,39 @@ input {
 .app-form-control {
 	width: 100%;
 	padding: 10px 0;
-	background: none;
 	border: none;
 	border-bottom: 1px solid #666;
-	color: #ddd;
 	font-size: 14px;
 	outline: none;
+	color: #ddd;
+	background: none;
 	transition: border-color .2s;
 }
 
-.app-form-control::placeholder { color: #666; }
-
-.app-form-control:focus { border-bottom-color: #ddd; }
-
-.app-form-button {
-	background: none;
-	border: none;
-	color: #ea1d6f;
-	font-size: 14px;
-	cursor: pointer;
-	outline: none;
+.app-form-control::placeholder {
+	color: #666;
 }
 
-.app-form-button:hover { color: #b9134f; }
+.app-form-control:focus {
+	border-bottom-color: #ddd;
+}
+
+.app-form-button {
+	border: none;
+	font-size: 14px;
+	outline: none;
+	color: #ea1d6f;
+	background: none;
+	cursor: pointer;
+}
+
+.app-form-button:hover {
+	color: #b9134f;
+}
 
 /* Partie responsive */
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width:520px) {
 	.screen-body {
 		flex-direction: column;
 	}
@@ -214,7 +236,7 @@ input {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
 	.screen-body {
 		padding: 20px;
 	}
