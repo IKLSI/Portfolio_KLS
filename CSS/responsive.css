@@ -117,22 +117,33 @@
 
 	/* Section projets */
 
+	#Projets {
+		margin-top: 115rem;
+	}
+
 	.ensembleProjets {
-		width: 95%;
+		width: 85%;
 		padding-right: 0;
 		padding-left: 0;
 	}
 
+	.projetImg img {
+		width: 400px;
+	}
+
+	.projetImg img,
+	.projetImg .Dashboard,
+	.projetImg .Medium {
+		width: 350px;
+	}
+
 	.projetContenu p {
-		width: 100%;
+		width: 60%;
+		margin-left: 4rem;
 	}
 
 	.projetContenu div img {
 		width: 25px;
-	}
-
-	.Etiquette {
-		width: 100%;
 	}
 
 	.Projets {
@@ -144,22 +155,10 @@
 		padding: 0;
 	}
 
-	.Etiquette:hover .TitreProjet {
-		display: none;
-	}
-
-	.TitreProjet {
-		display: relative;
-	}
-
-	#projets {
-		margin-top: 75rem;
-	}
-
 	/* Section contact */
 
 	#Contact {
-		margin-top: 40rem;
+		margin-top: 90rem;
 	}
 
 	#Contact p {
