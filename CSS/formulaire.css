@@ -22,7 +22,7 @@ input {
 	height: 50px;
 	margin-top: 10px;
 	margin-top: 5%;
-	border: 1px solid cyan;
+	border: 1px solid #888;
 	border-radius: 10px;
 	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
 	font-weight: bold;
@@ -31,7 +31,7 @@ input {
 
 #submitButton:hover {
 	color: #000;
-	background-color: cyan;
+	background-color: #fff;
 }
 
 .container {
@@ -135,7 +135,7 @@ input {
 	position: relative;
 	flex-direction: column;
 	font-size: 26px;
-	color: #ea1d6f;
+	color: #888;
 }
 
 .app-title:after {
@@ -146,7 +146,7 @@ input {
 	left: 0;
 	width: 25px;
 	height: 4px;
-	background: #ea1d6f;
+	background: #000;
 }
 
 .app-contact {
@@ -203,13 +203,13 @@ input {
 	border: none;
 	font-size: 14px;
 	outline: none;
-	color: #ea1d6f;
+	color: #fff;
 	background: none;
 	cursor: pointer;
 }
 
 .app-form-button:hover {
-	color: #b9134f;
+	color: #000;
 }
 
 /* Partie responsive */
